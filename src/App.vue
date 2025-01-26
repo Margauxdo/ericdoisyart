@@ -1,28 +1,25 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
+import Menu from "@/components/Menu.vue"
+import Logo from "@/components/Logo.vue"
+import Footer from "@/components/Footer.vue"
 </script>
 
 <template>
   <div id="app">
   <!--Header : menu + logo -->
     <header>
-    <div class="logo">
-      <img src="/src/assets/logo.png" alt="logo du site">
-    </div>
+    <Logo/>
 
-      <nav>
-        <ul>
-          <li><router-link to="/">Accueil</router-link></li>
-          <li><router-link to="/histoire">Mon histoire</router-link></li>
-          <li><router-link to="/hub">Hub</router-link></li>
-          <li><router-link to="/creations">Mes créations</router-link></li>
-          <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
-      </nav>
+      <Menu/>
+
     </header>
     <main>
       <router-view></router-view>
     </main>
+    <footer>
+    <Footer/>
+    </footer>
   </div>
 </template>
 

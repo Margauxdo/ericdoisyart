@@ -17,7 +17,10 @@ const router = createRouter({
   {
     path: '/hub',
     name: 'Hub',
-    component: () => import('../views/HubView.vue'),
+    beforeEnter() {
+           // Redirection vers un site externe
+           window.location.href = 'https://linktr.ee/ericdoisy';
+         },
     },
   {
       path: '/creations',
