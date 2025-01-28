@@ -44,6 +44,7 @@
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
+
 }
 
 .logo {

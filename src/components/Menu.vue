@@ -3,8 +3,8 @@
           <ul>
             <li><router-link to="/histoire">Mon histoire</router-link>
               <ul class="submenu">
-                 <li><router-link to="/mon-parcours">Mon parcours</router-link></li>
-                 <li><router-link to="/mon-atelier">Mon atelier</router-link></li>
+                 <li><router-link to="/histoire#mon-parcours">Mon parcours</router-link></li>
+                 <li><router-link to="/histoire#mon-atelier">Mon atelier</router-link></li>
               </ul>
             </li>
             <li>
@@ -40,8 +40,9 @@ nav a{
     color:#017393;
 }
 nav a:hover{
-  border-top: 0.2px solid #933701;
-  color: #933701;
+  border-top: 0.2px solid #c48c00;
+  color:#c48c00;
+
 }
 /* Sous-menu */
 nav li {
@@ -64,24 +65,24 @@ nav li {
 }
 
 li:hover .submenu {
-  display: block; /* Afficher le sous-menu au survol */
+  display: block;
 }
 
 .submenu li {
   padding: 8px 15px;
-  white-space: nowrap; /* Évite les retours à la ligne */
+  white-space: nowrap;
 }
 
 .submenu li a {
-  font-size: 18px; /* Taille plus petite pour le sous-menu */
+  font-size: 18px;
   color: #017393;
-  text-transform: none; /* Pas de majuscules dans le sous-menu */
+  text-transform: none;
   text-decoration: none;
 }
 
 .submenu li a:hover {
-  color: #933701;
-  background-color: rgba(147, 55, 1, 0.1); /* Fond coloré au survol */
+  color:#c48c00;
+  background-color: rgba(147, 55, 1, 0.1);
   border-radius: 4px;
 }
 </style>

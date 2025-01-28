@@ -25,6 +25,10 @@ import Footer from "@/components/Footer.vue"
 
 <style>
 /* Ajoutez ici vos styles */
+body{
+  background-color:#e9e9e9;
+
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -32,5 +36,42 @@ nav ul {
 }
 nav ul li {
   margin-right: 15px;
+}
+footer{
+    padding-top: 100px;
+}
+h1{
+  font-family: "wausau", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+      color:#c48c00;
+      margin-left:150px;
+      font-size:45px;
+      border-top:1px solid #c48c008c;
+
+}
+h2{
+  font-size:25px;
+}
+h2, h3, h4{
+  font-family: "madelinette-roman-vino", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left:150px;
+   color:#017393;
+
+}
+p{
+  font-family: "mokoko", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left:150px;
+  color:#014b60;
+  max-width:1800px;
+}
+a{
+  font-family: "mokoko", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 </style>

@@ -6,3 +6,6 @@
     <h1>Bienvenue sur la page acceuil</h1>
   </main>
 </template>
+
+<style scoped>
+</style>

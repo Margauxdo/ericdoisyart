@@ -33,6 +33,18 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     }
   ],
+
+ scrollBehavior(to) {
+    // Si une ancre (#) est présente dans l'URL, scroll vers l'élément correspondant
+    if (to.hash) {
+      const element = document.querySelector(to.hash);
+      if (element) {
+        return { el: to.hash, behavior: "smooth" };
+      }
+    }
+    // Scroll en haut si aucune ancre
+    return { top: 0 };
+  },
 });
 
 export default router;
