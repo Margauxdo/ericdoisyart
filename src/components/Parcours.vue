@@ -11,6 +11,7 @@
     <p>"C'est ma curiosité, mon envie d'évoluer, et mon travail qui me conduit vers la recherche expressive et les compositions graphiques."
     </p>
     </div>
+    <div class="containPortrait">
     <div class="portrait">
         <img src="/src/assets/portrait-ericdoisy.jpg" alt="portrait">
     </div>
@@ -50,32 +51,69 @@
        l’imagination du spectateur pour s’imprégner de mon travail. </p>
     </div>
     </div>
+    </div>
 
     </div>
   </main>
 </template>
 
 <style scoped>
-  img {
-    max-width: 800px;
-    height: auto;
-  }
+/* Global */
+.parcours {
+  padding: 20px;
+}
 
-  .portrait {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Optionnel : Si vous voulez une hauteur minimum pour le conteneur */
-    min-height: 300px;
-  }
-
-  .citation p{
-  text-align:center;
+.citation p {
+  text-align: center;
   text-transform: uppercase;
-  color:#845f01;
-  margin-bottom:30px;
-  font-weight:bold;
-  }
+  color: #845f01;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
 
+/* Conteneur global */
+.contain-parcours {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+/* Conteneur portrait et texte */
+.containPortrait {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Image (40%) */
+.portrait {
+  flex: 0 0 40%; /* Image occupe 40% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border:2px double #014b60;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte (60%) */
+.presentation {
+  flex: 0 0 60%;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-left:50px;
+}
+
+.presentation p {
+  margin: 0;
+}
 </style>

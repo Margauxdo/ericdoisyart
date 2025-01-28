@@ -30,7 +30,9 @@ nav{
     align-items: center;
     justify-content: center;
     height: 150px;
-    border-bottom:0.2px solid #017393;
+    border-bottom: 0.2px solid #01739359;
+    border-top: 0.1px solid #01739324;
+    }
 
     }
 nav a{

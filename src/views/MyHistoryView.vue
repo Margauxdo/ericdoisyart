@@ -1,6 +1,8 @@
 <script setup>
 
 import Parcours from "@/components/Parcours.vue"
+import Atelier from "@/components/Atelier.vue"
+
 
 </script>
 
@@ -14,6 +16,7 @@ import Parcours from "@/components/Parcours.vue"
     </div>
 
     <div id="mon-atelier" class="atelier-eric">
+    <Atelier/>
         </div>
   </div>
 </template>

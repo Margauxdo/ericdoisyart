@@ -29,6 +29,11 @@ body{
   background-color:#e9e9e9;
 
 }
+*{
+border-box:box-sizing;
+max-width:1880px;
+width:100%;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -47,7 +52,6 @@ h1{
       color:#c48c00;
       margin-left:150px;
       font-size:45px;
-      border-top:1px solid #c48c008c;
 
 }
 h2{
@@ -65,9 +69,8 @@ p{
   font-family: "mokoko", serif;
   font-weight: 400;
   font-style: normal;
-  margin-left:150px;
   color:#014b60;
-  max-width:1800px;
+  max-width:1880px;
 }
 a{
   font-family: "mokoko", serif;
