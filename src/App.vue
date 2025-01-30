@@ -24,13 +24,15 @@ import Footer from "@/components/Footer.vue"
 </template>
 
 <style>
-/* Ajoutez ici vos styles */
-body{
-  background-color:#e9e9e9;
-  box-sizing: border-box;
-    max-width: 1880px;
-    width: 100%;
+
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+  margin: 0;
+  padding: 0;
 }
+
+
 
 
 nav ul {
@@ -41,9 +43,7 @@ nav ul {
 nav ul li {
   margin-right: 15px;
 }
-footer{
-    padding-top: 100px;
-}
+
 h1{
   font-family: "kiln-sans", sans-serif;
   font-weight: 400;
@@ -62,6 +62,22 @@ h2{
   color:#017393;
   font-size:45px;
 }
+h3{
+  font-family: "kiln-sans", sans-serif;
+  font-weight: 300;
+  font-style: light;
+  color: #c48c00;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0px 0px 50px 0px;
+  font-size: 35px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
 p{
   font-family: "freight-sans-pro", sans-serif;
   font-weight: 300;

@@ -48,10 +48,9 @@ export default {
 .carousel-container {
   width: 100%;
   margin-top: 0px;
-
   overflow: hidden;
   position: relative;
-  transform: rotate(-2deg);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 95%);
 }
 
 .slide-content {
@@ -62,15 +61,13 @@ export default {
   align-items: center;
 }
 
-
 .carousel-image {
   width: 100%;
-  max-height:700px;
+  max-height: 700px;
   object-fit: cover;
-  object-position:center;
-  transition: transform 1s ease-in;
+  object-position: center;
+  transition: transform 1s ease-in-out;
 }
-
 
 :deep(.swiper-pagination) {
   position: absolute;
@@ -94,6 +91,7 @@ export default {
   opacity: 1;
 }
 
+/*  Boutons de navigation */
 :deep(.swiper-button-prev),
 :deep(.swiper-button-next) {
   color: white !important;
@@ -106,4 +104,5 @@ export default {
 :deep(.swiper-button-next:hover) {
   background: rgba(0, 0, 0, 0.7);
 }
+
 </style>

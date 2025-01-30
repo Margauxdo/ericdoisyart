@@ -25,10 +25,10 @@ const router = createRouter({
          },
     },
   {
-      path: '/creations',
-      name: 'Mes créations',
-      component: () => import('../views/MyCreationsView.vue'),
-      },
+    path: '/creations',
+    name: 'Mes créations',
+    component: () => import('../views/MyCreationsView.vue'),
+  },
     {
       path: '/contact',
       name: 'Contact',
@@ -55,6 +55,18 @@ const router = createRouter({
     // Scroll en haut si aucune ancre
     return { top: 0 };
   },
+
+scrollBehavior(to, from, savedPosition) {
+  if (to.hash) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ el: to.hash, behavior: "smooth" });
+      }, 500); // Délai pour s'assurer que le DOM est chargé
+    });
+  }
+  return { top: 0 };
+}
+
 });
 
 export default router;

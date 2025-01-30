@@ -3,8 +3,9 @@
           <ul>
             <li><router-link to="/histoire">Mon histoire</router-link>
               <ul class="submenu">
-                 <li><router-link to="/mon-parcours">Mon parcours</router-link></li>
-                 <li><router-link to="/mon-atelier">Mon atelier</router-link></li>
+                 <li><router-link :to="{ path: '/histoire', hash: '#mon-parcours' }">Mon parcours</router-link></li>
+                 <li><router-link :to="{ path: '/histoire', hash: '#mon-atelier' }">Mon atelier</router-link></li>
+
               </ul>
             </li>
             <li>
@@ -12,8 +13,9 @@
             </li>
             <li><router-link to="/creations">Mes créations</router-link>
                <ul class="submenu">
-                  <li><router-link to="/neo-expressionnisme">Néo-expressionnisme</router-link></li>
-                  <li><router-link to="/figuratif">Figuratif</router-link></li>
+               <li><router-link :to="{ path: '/creations', hash: '#neo-expressionnisme' }" exact-active-class="active">Néo-expressionnisme</router-link></li>
+               <li><router-link :to="{ path: '/creations', hash: '#figuratif' }" exact-active-class="active">Figuratif</router-link></li>
+
                </ul>
             </li>
             <li><router-link to="/contact">Contact</router-link></li>
@@ -27,12 +29,11 @@
 <style scoped>
 nav {
       height: 80px;
-      background: white;
       display: flex;
       align-items: center;
       justify-content: center;
       border-bottom: 1px solid #017393;
-      box-shadow: 0 5px 15px #545455;
+      box-shadow: 0 5px 15px #000000;
       position: relative;
       top: 0;
       left: 0;
