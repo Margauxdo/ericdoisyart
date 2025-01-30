@@ -107,8 +107,9 @@ h2{
 .portrait img {
   width: 100%;
   height: auto;
-  border:2px double #014b60;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px double #014b60;
+  box-shadow: 5px 6px 6px rgb(0 0 0 / 35%);
+  border-radius: 500px 0px 0px 500px;
 }
 
 /* Texte (60%) */
@@ -118,6 +119,7 @@ h2{
   line-height: 1.6;
   font-size: 16px;
   margin-left:50px;
+  margin-top: 100px;
 }
 
 .presentation p {

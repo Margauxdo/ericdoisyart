@@ -7,6 +7,9 @@ import CarrousselHome from "@/components/CarrousselHome.vue";
     <div class="carroussel">
       <CarrousselHome />
     </div>
+    <div class="text">
+    <h3>Eric Doisy, peintre plasticien neo-expressionniste, mêle abstractionet techniques mixtes pour créer des oeuvres uniques et vibrantes, entre émotion et audace.</h3>
+    </div>
   </main>
 </template>
 

@@ -40,7 +40,7 @@ nav {
       z-index: 1000;
       padding: 20px;
       background: #014961;
-      border-radius: 0px 0px 15px 15px;
+      border-radius: 0px 0px 40px 40px;
 }
 
 nav li{

@@ -33,9 +33,9 @@ export default {
   setup() {
     const images = ref([
       "/src/assets/photo1C.jpeg",
-      "/src/assets/photo2C.jpeg",
-      "/src/assets/photo3C.jpeg",
       "/src/assets/photo4C.jpeg",
+      "/src/assets/photo3C.jpeg",
+      "/src/assets/photo2C.jpeg",
     ]);
 
     return { images };
@@ -44,17 +44,16 @@ export default {
 </script>
 
 <style scoped>
-/* 🌟 Conteneur du carrousel en quinconce */
+
 .carousel-container {
   width: 100%;
-  height: 80vh;
-  margin-top: 40px; /* Décalage pour placer en quinconce */
+  margin-top: 0px;
+
   overflow: hidden;
   position: relative;
-  transform: rotate(-2deg); /* Légère rotation pour l'effet quinconce */
+  transform: rotate(-2deg);
 }
 
-/* 🌟 Slide en pleine largeur */
 .slide-content {
   width: 100%;
   height: 100%;
@@ -63,16 +62,16 @@ export default {
   align-items: center;
 }
 
-/* 🌟 Animation fluide des images */
+
 .carousel-image {
   width: 100%;
-  height: 100%;
+  max-height:700px;
   object-fit: cover;
-  border-radius: 10px;
-  transition: transform 1s ease-in-out;
+  object-position:center;
+  transition: transform 1s ease-in;
 }
 
-/* 🌟 Pagination moderne (points centrés) */
+
 :deep(.swiper-pagination) {
   position: absolute;
   bottom: 20px;
@@ -95,7 +94,6 @@ export default {
   opacity: 1;
 }
 
-/* 🌟 Boutons de navigation */
 :deep(.swiper-button-prev),
 :deep(.swiper-button-next) {
   color: white !important;
