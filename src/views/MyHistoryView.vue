@@ -14,6 +14,8 @@ import Atelier from "@/components/Atelier.vue"
 
     <Parcours/>
     </div>
+    <div class="separ">
+    </div>
 
     <div id="mon-atelier" class="atelier-eric">
     <Atelier/>
@@ -28,5 +30,10 @@ import Atelier from "@/components/Atelier.vue"
     display: flex;
     align-items: center;
   }
-}
+  .separ{
+  height:3px;
+  }
+
+  }
+
 </style>

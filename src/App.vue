@@ -9,9 +9,9 @@ import Footer from "@/components/Footer.vue"
   <div id="app">
   <!--Header : menu + logo -->
     <header>
-    <Logo/>
+<Logo/>    <Menu/>
 
-      <Menu/>
+
 
     </header>
     <main>
@@ -27,13 +27,12 @@ import Footer from "@/components/Footer.vue"
 /* Ajoutez ici vos styles */
 body{
   background-color:#e9e9e9;
+  box-sizing: border-box;
+    max-width: 1880px;
+    width: 100%;
+}
 
-}
-*{
-border-box:box-sizing;
-max-width:1880px;
-width:100%;
-}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -46,35 +45,29 @@ footer{
     padding-top: 100px;
 }
 h1{
-  font-family: "wausau", sans-serif;
+  font-family: "kiln-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-      color:#c48c00;
-      margin-left:150px;
-      font-size:45px;
-
-}
+  color:#c48c00;
+   font-size:45px;
+  text-align:center;
+    text-decoration: overline;
+    text-decoration-line: overline;
+    text-emphasis: circle;
+    text-emphasis: filled;}
 h2{
-  font-size:25px;
-}
-h2, h3, h4{
-  font-family: "madelinette-roman-vino", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left:150px;
-   color:#017393;
-
+   font-family: "ff-market-web", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  color:#017393;
+  font-size:45px;
 }
 p{
-  font-family: "mokoko", serif;
-  font-weight: 400;
+  font-family: "freight-sans-pro", sans-serif;
+  font-weight: 300;
   font-style: normal;
   color:#014b60;
   max-width:1880px;
-}
-a{
-  font-family: "mokoko", serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  font-size:18px;}
+
 </style>

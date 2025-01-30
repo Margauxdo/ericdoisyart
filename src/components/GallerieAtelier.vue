@@ -45,11 +45,15 @@ const closeModal = () => {
 /* Galerie */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 20px;
-  margin-left: 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1800px;
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+
 }
 
 /* Miniatures */

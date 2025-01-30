@@ -2,36 +2,41 @@
 </script>
 
 <template>
-<div class="body-foot">
-<div class="logo">
-  <img src="/src/assets/logoF.png" alt="logo footer">
-</div>
-<div class="map">
+  <div class="body-foot">
+    <!-- LOGO À GAUCHE -->
+    <div class="logo">
+      <img src="/src/assets/logoF.png" alt="logo footer">
+    </div>
 
-</div>
-<div class="contact">
-<ul>
+    <!-- MENTIONS LÉGALES & CONTACT AU CENTRE -->
+    <div class="contact">
+      <ul>
+        <li><a class="ML" href="@/assets/mentions-legales.pdf" download="Mentions-Legales.pdf">Mentions légales</a></li>
+      </ul>
+      <ul class="picto-contact">
+        <li>
+        <router-link to="/mail">
+                    <img src="@/assets/picto-mail.png" alt="email">
+                  </router-link>
+        </li>
+        <li><router-link to="/phone">
+                        <img src="@/assets/picto-tel.png" alt="telephone">
+             </router-link>
+        </li>
+      </ul>
+    </div>
 
-<li><a class="ML" href="@/assets/mentions-legales.pdf" download="Mentions-Legales.pdf">Mentions légales</a></li>
-</ul>
-<ul class="picto-contact">
-<li><a href="ericdoisy@gmail.com">
-<img src="@/assets/picto-mail.png" alt="email"></a></li>
-<li><a href="tel:+33660576310">
-<img src="@/assets/picto-tel.png" alt="telephone"></a></li>
-</ul>
-</div>
-<div class="reseauxsocio">
-<ul>
-<li><a href="https://www.facebook.com/ericdoisyart"><img src="@/assets/facebook.png" alt="facebook"></a></li>
-<li><a href="https://www.linkedin.com/in/eric-doisy-375ba020/"><img src="@/assets/linkedin.png" alt="linkedin"></a></li>
-<li><a href="https://www.instagram.com/ericdoisyart/"><img src="@/assets/instagram.png" alt="instagram"></a></li>
-</ul>
-</div>
-</div>
-
-
+    <!-- RÉSEAUX SOCIAUX À DROITE -->
+    <div class="reseauxsocio">
+      <ul>
+        <li><a href="https://www.facebook.com/ericdoisyart"><img src="@/assets/facebook.png" alt="facebook"></a></li>
+        <li><a href="https://www.linkedin.com/in/eric-doisy-375ba020/"><img src="@/assets/linkedin.png" alt="linkedin"></a></li>
+        <li><a href="https://www.instagram.com/ericdoisyart/"><img src="@/assets/instagram.png" alt="instagram"></a></li>
+      </ul>
+    </div>
+  </div>
 </template>
+
 
 
 
@@ -62,12 +67,19 @@
   display:flex;
   align-content:center;
   justify-content:center;
+  gap:5px;
 }
-.picto-contact img{
-  height:50px;
-  object-fit:cover;
-  margin: 10px;
+.picto-contact li{
+  margin:0;
+  padding:0;
 }
+.picto-contact img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  margin: 15px;
+}
+
 .contact {
   flex: 2;
   text-align: center;

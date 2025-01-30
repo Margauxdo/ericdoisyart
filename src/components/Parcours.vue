@@ -62,6 +62,15 @@
 .parcours {
   padding: 20px;
 }
+h2{
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-left: ridge;
+
+}
 
 .citation p {
   text-align: center;
@@ -71,26 +80,25 @@
   font-weight: bold;
 }
 
-/* Conteneur global */
 .contain-parcours {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
-/* Conteneur portrait et texte */
+
 .containPortrait {
   display: flex;
   gap: 20px;
   width: 100%;
 }
 
-/* Image (40%) */
 .portrait {
-  flex: 0 0 40%; /* Image occupe 40% */
+  flex: 0 0 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +107,6 @@
 .portrait img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
   border:2px double #014b60;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

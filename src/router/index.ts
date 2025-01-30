@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-// import HomeView from '../views/HomeView.vue'; // Assurez-vous que le fichier existe
+import HomeView from '../views/HomeView.vue'; // Assurez-vous que le fichier existe
+import MailView from '@/views/MailView.vue';
+import PhoneView from '@/views/PhoneView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,7 +33,15 @@ const router = createRouter({
       path: '/contact',
       name: 'Contact',
       component: () => import('../views/ContactView.vue'),
-    }
+    },
+  { path: '/mail',
+    name: 'MailView',
+    component: MailView
+  },
+  { path: '/phone',
+    name: 'PhoneView',
+    component: PhoneView
+    },
   ],
 
  scrollBehavior(to) {

@@ -1,11 +1,30 @@
-<script setup lang="ts">
+<script setup>
+import CarrousselHome from "@/components/CarrousselHome.vue";
 </script>
 
 <template>
   <main>
-    <h1>Bienvenue sur la page acceuil</h1>
+    <div class="carroussel">
+      <CarrousselHome />
+    </div>
   </main>
 </template>
 
 <style scoped>
+
+main {
+  margin-top: 0px;
+  text-align: center;
+  position:relative;
+  bottom:50px;
+}
+
+
+.carroussel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: rotate(2deg);
+}
 </style>

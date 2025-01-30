@@ -1,25 +1,44 @@
 <template>
-<div class="logo">
-  <router-link to="/">
-      <img src="/src/assets/logo.png" alt="logo du site">
-
-  </router-link>
-
-    </div>
+  <div class="logo-container">
+    <router-link to="/">
+      <img src="/src/assets/logoF.png" alt="logo du site" class="logo">
+    </router-link>
+  </div>
 </template>
 
 <script setup>
 </script>
 
 <style scoped>
-.logo {
+.logo-container {
+  width: 100%;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background:#014961;
+}
+
+.logo {
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
 }
-img {
-  max-width: 100%;
-  height: 80px;
+
+
+@media (max-width: 768px) {
+  .logo-container {
+    height: 150px;
+  }
+
+  .logo {
+    width: 250px; /* Taille plus petite pour mobile */
+  }
 }
 </style>

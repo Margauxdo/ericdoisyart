@@ -25,8 +25,21 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue"
 </template>
 
 <style scoped>
-.text-atelier p{
-margin-left:150px;
+
+
+.contain-atelier{
+    max-width:1500px;
+    margin:auto;
+     padding-bottom: 100px;
+}
+.atelier h2{
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-left: ridge;
+
 }
 
 </style>
