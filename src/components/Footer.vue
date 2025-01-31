@@ -3,14 +3,12 @@
 
 <template>
   <div class="body-foot">
-    <!-- LOGO À GAUCHE -->
     <div class="logo">
     <a  href="/" class="homepage">
       <img src="/src/assets/logoF.png" alt="logo footer">
       </a>
     </div>
 
-    <!-- MENTIONS LÉGALES & CONTACT AU CENTRE -->
     <div class="contact">
       <ul>
         <li><a class="ML" href="@/assets/mentions-legales.pdf" download="Mentions-Legales.pdf">Mentions légales</a></li>
@@ -28,7 +26,6 @@
       </ul>
     </div>
 
-    <!-- RÉSEAUX SOCIAUX À DROITE -->
     <div class="reseauxsocio">
       <ul>
         <li><a href="https://www.facebook.com/ericdoisyart"><img src="@/assets/facebook.png" alt="facebook"></a></li>

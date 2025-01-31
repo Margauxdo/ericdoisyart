@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-// Liste d'images
 const images = [
   { id: 1, src: '/src/assets/atelier/atelier1.jpg', alt: 'Image 1' },
   { id: 2, src: '/src/assets/atelier/atelier2.jpg', alt: 'Image 2' },
@@ -42,7 +41,6 @@ const closeModal = () => {
 </template>
 
 <style scoped>
-/* Galerie */
 
 .gallery {
       display: grid;
@@ -56,7 +54,6 @@ const closeModal = () => {
 
 }
 
-/* Miniatures */
 .thumbnail img {
   width: 100%;
   height: 200px;
@@ -72,7 +69,6 @@ const closeModal = () => {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Modal */
 .modal {
   position: fixed;
   top: 0;

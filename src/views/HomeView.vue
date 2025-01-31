@@ -34,7 +34,8 @@ import CarrousselHome from "@/components/CarrousselHome.vue";
 const images = ref([
   "/src/assets/img-noexpos.png",
   "/src/assets/img-noexpos2.png",
-  "/src/assets/img-nosexpos3.png",
+  //"/src/assets/img-nosexpos3.png",
+  "/src/assets/event/publication_siteweb_mars_2025.png"
 ]);
 
 const modalImage = ref(null);

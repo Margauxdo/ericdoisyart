@@ -44,7 +44,6 @@ onMounted(() => {
 </template>
 
 <style>
-/* Ajoutez ici vos styles */
 body{
   background-color:#e9e9e9;
   box-sizing: border-box;
