@@ -5,7 +5,9 @@
   <div class="body-foot">
     <!-- LOGO À GAUCHE -->
     <div class="logo">
+    <a  href="/" class="homepage">
       <img src="/src/assets/logoF.png" alt="logo footer">
+      </a>
     </div>
 
     <!-- MENTIONS LÉGALES & CONTACT AU CENTRE -->

@@ -1,8 +1,22 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
+import { ref, onMounted } from 'vue';
 import Menu from "@/components/Menu.vue"
 import Logo from "@/components/Logo.vue"
 import Footer from "@/components/Footer.vue"
+const showScrollButton = ref(false);
+
+const handleScroll = () => {
+  showScrollButton.value = window.scrollY > 300;
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
 </script>
 
 <template>
@@ -20,19 +34,42 @@ import Footer from "@/components/Footer.vue"
     <footer>
     <Footer/>
     </footer>
+
+    <!-- Bouton de retour en haut -->
+        <button v-if="showScrollButton" @click="scrollToTop" class="scroll-to-top">
+          &#8679;
+        </button>
+
   </div>
 </template>
 
 <style>
-
-body {
-  max-width: 100%;
-  overflow-x: hidden; /* Empêche le défilement horizontal */
-  margin: 0;
-  padding: 0;
+/* Ajoutez ici vos styles */
+body{
+  background-color:#e9e9e9;
+  box-sizing: border-box;
+    max-width: 1880px;
+    width: 100%;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #c48c00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
 }
 
-
+.scroll-to-top:hover {
+  opacity: 1;
+}
 
 
 nav ul {
@@ -43,7 +80,9 @@ nav ul {
 nav ul li {
   margin-right: 15px;
 }
-
+footer{
+    padding-top: 100px;
+}
 h1{
   font-family: "kiln-sans", sans-serif;
   font-weight: 400;

@@ -1,6 +1,6 @@
 <template>
   <div class="neo-container">
-    <h2>Néo-expressionisme.vue</h2>
+    <h2>Néo-expressionisme</h2>
 
 
   </div>

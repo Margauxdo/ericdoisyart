@@ -1,6 +1,6 @@
 <template>
-  <h1>Formulaire de contact</h1>
-  <div>
+  <h1 class="fade-in">Formulaire de contact</h1>
+  <div class="form-container fade-in">
     <form @submit.prevent="sendEmail">
       <div>
         <label for="name">Nom :</label>
@@ -34,103 +34,128 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
-import VueRecaptcha from 'vue-recaptcha-v3';
+import { ref, onMounted } from "vue";
+import emailjs from "emailjs-com";
+import VueRecaptcha from "vue-recaptcha-v3";
 
 export default {
   components: { VueRecaptcha },
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      },
-      captchaVerified: false, // Indicateur reCAPTCHA validé
-    };
-  },
-  methods: {
-    onCaptchaVerified(response) {
+  setup() {
+    const form = ref({ name: "", email: "", phone: "", message: "" });
+    const captchaVerified = ref(false);
+
+    const onCaptchaVerified = (response) => {
       console.log("reCAPTCHA validé :", response);
-      this.captchaVerified = true;
-    },
-    onCaptchaExpired() {
+      captchaVerified.value = true;
+    };
+    const onCaptchaExpired = () => {
       console.log("reCAPTCHA expiré !");
-      this.captchaVerified = false;
-    },
-    sendEmail() {
-      if (!this.captchaVerified) {
+      captchaVerified.value = false;
+    };
+    const sendEmail = () => {
+      if (!captchaVerified.value) {
         alert("Veuillez valider le reCAPTCHA.");
         return;
       }
-
-      const serviceID = 'service_ogako3q';
-      const templateID = 'template_4cz7545';
-      const userID = '-D87GITW0bleKDqC0';
-
-      if (!this.form.name || !this.form.email || !this.form.message) {
-        alert('Veuillez remplir tous les champs obligatoires.');
+      const serviceID = "service_ogako3q";
+      const templateID = "template_4cz7545";
+      const userID = "-D87GITW0bleKDqC0";
+      if (!form.value.name || !form.value.email || !form.value.message) {
+        alert("Veuillez remplir tous les champs obligatoires.");
         return;
       }
-
-      emailjs
-        .send(serviceID, templateID, this.form, userID)
-        .then(() => {
-          alert('Email envoyé avec succès !');
-        })
+      emailjs.send(serviceID, templateID, form.value, userID)
+        .then(() => alert("Email envoyé avec succès !"))
         .catch((error) => {
-          alert('Erreur lors de l\'envoi de l\'email. Veuillez réessayer.');
+          alert("Erreur lors de l'envoi de l'email. Veuillez réessayer.");
           console.error(error);
         });
-    },
+    };
+
+    onMounted(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+      document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+    });
+
+    return { form, captchaVerified, onCaptchaVerified, onCaptchaExpired, sendEmail };
   },
 };
 </script>
 
-<style>
-/* Ajouté sans modification de votre style */
+<style scoped>
+h1 {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.form-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
 form {
   max-width: 850px;
   margin: auto;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 10px;
-  background-color:#014961;
+  background-color: #014961;
   padding: 80px 50px;
-  margin: auto;
+  margin-bottom: 100px;
+  box-shadow: 4px 8px 15px 1px #919191;
 }
+
 form div {
   margin-bottom: 1em;
 }
+
 form label {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: #c48c00;
   display: block;
+  font-size: 18px;
 }
-form input {
-  background-color:#E4E7E7;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-form input, form textarea, form button {
+
+form input,
+form textarea,
+form button {
   border: 1px solid #cccccc;
-  padding: .5em;
-  font-size: 1em;
+  padding: 0.5em;
+  font-size: 16px;
   width: 100%;
   border-radius: 5px;
 }
+
 form button {
   background-color: #c48c00;
   color: white;
   border: none;
   cursor: pointer;
 }
+
 form button:hover {
-  background-color: #026c9e;
+  background-color: #c4c4c4;
+  color: #c48c00;
 }
+
 .recaptcha {
   margin-bottom: 15px;
 }
-</style>
+</style>s
