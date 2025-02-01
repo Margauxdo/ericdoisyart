@@ -37,7 +37,7 @@ export default {
     const images = ref([
       "/src/assets/photo1C.jpeg",
       "/src/assets/photo4C.jpeg",
-      "/src/assets/photo3C.jpeg",
+      "/src/assets/photo3C.jpg",
       "/src/assets/photo2C.jpeg",
     ]);
 

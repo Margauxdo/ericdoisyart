@@ -1,44 +1,42 @@
+<script setup>
+import { ref, defineEmits } from "vue";
+
+const styleOptions = ref(["Figuratif", "Néo-expressionnisme"]);
+const supportOptions = ref(["Bois", "Carton", "Acier", "Bois de palette", "Toile", "Toile de jute"]);
+
+const selectedStyle = ref(null);
+const selectedSupport = ref(null);
+
+const emit = defineEmits(["updateFilter"]);
+
+const updateFilter = () => {
+  emit("updateFilter", { style: selectedStyle.value, support: selectedSupport.value });
+};
+</script>
+
 <template>
-  <div>
-    <label for="category-select">Filtrer :</label>
-    <select id="category-select" v-model="selectedCategory" @change="applyFilter">
-      <option value="">Toutes les catégories d'œuvres</option>
-      <option v-for="category in categories" :key="category" :value="category">
-        {{ category }}
-      </option>
+  <div class="filter-container">
+    <select v-model="selectedStyle" @change="updateFilter">
+      <option value="" disabled selected>Choisir un style</option>
+      <option v-for="style in styleOptions" :key="style" :value="style">{{ style }}</option>
+    </select>
+
+    <select v-model="selectedSupport" @change="updateFilter">
+      <option value="" disabled selected>Choisir un support</option>
+      <option v-for="support in supportOptions" :key="support" :value="support">{{ support }}</option>
     </select>
   </div>
 </template>
 
-<script setup>
-import { ref, defineProps, emit } from "vue";
-
-// Propriétés passées depuis le parent
-defineProps({
-  categories: Array,
-});
-
-// État local pour la catégorie sélectionnée
-const selectedCategory = ref("");
-
-// Méthode pour émettre l'événement de changement de filtre
-const applyFilter = () => {
-  emit("filter-changed", selectedCategory.value);
-};
-</script>
-
 <style scoped>
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-
 select {
-  margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 8px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
 }
 </style>
