@@ -65,7 +65,7 @@ export default {
 
 .carousel-image {
   width: 100%;
-  max-height: 700px;
+  height: 700px;
   object-fit: cover;
   object-position: center;
   transition: transform 1s ease-in-out;
