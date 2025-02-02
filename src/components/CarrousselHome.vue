@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .carousel-container {
   width: 100%;
-  margin-top: 0px;
+  margin-top: -100px;
   overflow: hidden;
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 95%);
@@ -65,7 +65,7 @@ export default {
 
 .carousel-image {
   width: 100%;
-  height: 700px;
+  height: 900px;
   object-fit: cover;
   object-position: center;
   transition: transform 1s ease-in-out;
@@ -74,7 +74,7 @@ export default {
 
 :deep(.swiper-pagination) {
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }

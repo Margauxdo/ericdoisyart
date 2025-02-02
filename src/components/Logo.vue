@@ -32,13 +32,37 @@
 }
 
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
   .logo-container {
-    height: 150px;
+    height: 130px;
   }
 
   .logo {
     width: 250px;
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .logo-container {
+    height: 120px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-container {
+    height: 100px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+
 </style>

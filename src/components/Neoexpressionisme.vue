@@ -84,6 +84,7 @@ const filteredOeuvres = computed(() => {
   height: 600px;
   object-fit: cover;
   border-radius: 12px;
+
 }
 
 .overlay {

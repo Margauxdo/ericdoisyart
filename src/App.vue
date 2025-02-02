@@ -45,10 +45,12 @@ onMounted(() => {
 
 <style>
 body{
-  background-color:#e9e9e9;
+  //background-color:#e9e9e9;
+  //background:#01496161;
+  background-color:hsla(260,11%,85%,1);
   box-sizing: border-box;
-    max-width: 1880px;
-    width: 100%;
+
+  width: 100%;
 }
 .scroll-to-top {
   position: fixed;
@@ -122,6 +124,93 @@ p{
   font-style: normal;
   color:#014b60;
   max-width:1880px;
-  font-size:18px;}
+  font-size:18px;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .scroll-to-top {
+      width: 45px;
+      height: 45px;
+      font-size: 22px;
+    }
+
+    h1, h2 {
+      font-size: 38px;
+    }
+
+    h3 {
+      font-size: 30px;
+      max-width: 900px;
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    body {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    main {
+      padding: 0 10px;
+    }
+
+    footer {
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 26px;
+      max-width: 700px;
+    }
+
+    .scroll-to-top {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    h1, h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 24px;
+      max-width: 90%;
+    }
+
+    .scroll-to-top {
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+
 
 </style>

@@ -54,13 +54,18 @@ main {
   margin-top: 0px;
   text-align: center;
   position: relative;
+
 }
 
 .expos {
-  background: hsla(260, 11%, 85%, 1);
+  //background: hsla(260, 11%, 85%, 1);
+  background: #014961;
   padding-top: 30px;
   padding-bottom: 50px;
   clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+}
+.expos h2{
+   color:#c48c00;
 }
 
 .carroussel {
@@ -76,18 +81,17 @@ main {
   font-weight: bold;
     color:#c48c00;
 
-  animation: slideText 15s linear infinite;
+  animation: slideText 15s linear ;
 }
 
 @keyframes slideText {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   to {
     transform: translateX(0%);
   }
 }
-
 .affiche {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

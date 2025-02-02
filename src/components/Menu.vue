@@ -1,30 +1,57 @@
 <template>
-  <nav>
-          <ul>
-            <li><router-link to="/histoire">Mon histoire</router-link>
-              <ul class="submenu">
-                 <li><router-link :to="{ path: '/histoire', hash: '#mon-parcours' }">Mon parcours</router-link></li>
-                 <li><router-link :to="{ path: '/histoire', hash: '#mon-atelier' }">Mon atelier</router-link></li>
+  <nav :class="{ active: showMenu }">
+    <!-- Bouton burger pour mobile -->
+    <div class="burger" @click="toggleMenu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
 
-              </ul>
-            </li>
-            <li>
-               <a href="https://linktr.ee/ericdoisy" target="_blank" rel="noopener noreferrer">Hub</a>
-            </li>
-            <li><router-link to="/creations">Mes créations</router-link>
-               <ul class="submenu">
-               <li><router-link :to="{ path: '/creations', hash: '#neo-expressionnisme' }" exact-active-class="active">Néo-expressionnisme</router-link></li>
-               <li><router-link :to="{ path: '/creations', hash: '#figuratif' }" exact-active-class="active">Figuratif</router-link></li>
+    <ul>
+      <li @click="toggleSubMenu('histoire')">
+        <router-link to="/histoire">Mon histoire</router-link>
+        <ul v-if="activeSubMenu === 'histoire'" class="submenu">
+          <li><router-link :to="{ path: '/histoire', hash: '#mon-parcours' }">Mon parcours</router-link></li>
+          <li><router-link :to="{ path: '/histoire', hash: '#mon-atelier' }">Mon atelier</router-link></li>
+        </ul>
+      </li>
 
-               </ul>
-            </li>
-            <li><router-link to="/contact">Contact</router-link></li>
-          </ul>
+      <li><a href="https://linktr.ee/ericdoisy" target="_blank" rel="noopener noreferrer">Hub</a></li>
+
+      <li @click="toggleSubMenu('creations')">
+        <router-link to="/creations">Mes créations</router-link>
+        <ul v-if="activeSubMenu === 'creations'" class="submenu">
+          <li><router-link :to="{ path: '/creations', hash: '#neo-expressionnisme' }">Néo-expressionnisme</router-link></li>
+          <li><router-link :to="{ path: '/creations', hash: '#figuratif' }">Figuratif</router-link></li>
+        </ul>
+      </li>
+
+      <li><router-link to="/contact">Contact</router-link></li>
+    </ul>
   </nav>
 </template>
 
+
 <script setup>
+import { ref } from "vue";
+
+const showMenu = ref(false);
+const activeSubMenu = ref(null);
+
+const toggleMenu = () => {
+  showMenu.value = !showMenu.value;
+  activeSubMenu.value = null;
+};
+
+const toggleSubMenu = (menuName) => {
+  if (activeSubMenu.value === menuName) {
+    activeSubMenu.value = null;
+  } else {
+    activeSubMenu.value = menuName;
+  }
+};
 </script>
+
 
 <style scoped>
 nav {

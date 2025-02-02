@@ -41,36 +41,34 @@
 
 <style scoped>
 .body-foot {
-  background-color:#014961;
+  background-color: #014961;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
-
+  flex-wrap: wrap;
 }
+
 
 .logo {
   flex: 1;
   text-align: left;
 }
-.logo img{
-      max-width: 200px;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      width: 100%;
+.logo img {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
 }
-.picto-contact{
-  display:flex;
-  align-content:center;
-  justify-content:center;
-  gap:5px;
-}
-.picto-contact li{
-  margin:0;
-  padding:0;
+
+.picto-contact {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 5px;
 }
 .picto-contact img {
   height: 30px;
@@ -88,10 +86,10 @@
   flex: 1;
   text-align: right;
 }
-.reseauxsocio img{
-  max-width:50px;
-  width:100%
-  }
+.reseauxsocio img {
+  max-width: 50px;
+  width: 100%;
+}
 
 .contact ul,
 .reseauxsocio ul {
@@ -99,22 +97,92 @@
   padding: 0;
   margin: 0;
 }
-
-.contact ul li,
-.reseaux-sociaux ul li {
-  margin: 5px 0;
-}
-
 .reseauxsocio ul {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
-.ML{
-  color:#c48c00;
-  text-decoration:none;
+.ML {
+  color: #c48c00;
+  text-decoration: none;
 }
-.ML:hover{
-  color:#E1DEDD;
+.ML:hover {
+  color: #e1dedd;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .body-foot {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
   }
+
+  .logo {
+    flex: 1;
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 160px;
+  }
+
+  .contact {
+    flex: 2;
+    text-align: center;
+  }
+
+  .reseauxsocio {
+    flex: 1;
+    text-align: center;
+  }
+
+  .reseauxsocio ul {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .body-foot {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .logo img {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    flex: none;
+    width: 100%;
+    order: 2;
+  }
+
+  .reseauxsocio {
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    order: 3;
+  }
+
+  .reseauxsocio ul {
+    justify-content: center;
+  }
+
+  .picto-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picto-contact img {
+    height: 25px;
+    margin: 5px;
+  }
+}
+
 </style>

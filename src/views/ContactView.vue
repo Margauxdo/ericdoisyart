@@ -158,4 +158,54 @@ form button:hover {
 .recaptcha {
   margin-bottom: 15px;
 }
+
+
+@media screen and (max-width: 1024px) {
+  /* Tablette horizontale */
+
+  .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      max-width: 700px;
+      width: 80%;
+      padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  /* Tablette verticale */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    max-width: 550px;
+    width: 85%;
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Téléphone */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    max-width: 450px;
+    width: 90%;
+    padding: 30px 15px;
+    box-shadow: none;
+  }
+}
 </style>s

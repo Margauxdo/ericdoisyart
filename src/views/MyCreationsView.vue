@@ -38,13 +38,40 @@ const updateFilter = (filter) => {
 .oeuvres {
   text-align: center;
   padding: 20px;
+
 }
+
 .filter-button {
-  margin: 10px;
-  padding: 10px;
-  background-color: #007bff;
+  margin: 20px;
+  padding: 20px;
+  background-color: #c48c00;
   color: white;
   border: none;
   cursor: pointer;
+  float: right;
+  font-size:16px;
+  font-weight:bold;
+  text-transform:uppercase;
+  border-radius:5px;
+  box-shadow: 1px 4px 4px #c4c4c4;
+
+
+}
+
+
+.filter-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    float: right;
+    top: 100px;
+    position: relative;
+    left: 130px;
+
+}
+.select{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #014961;
 }
 </style>

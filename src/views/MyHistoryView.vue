@@ -51,12 +51,7 @@ onMounted(() => {
   padding: 50px 20px;
 }
 
-.separ {
-  height: 3px;
-  background: #ccc;
-  margin: 30px auto;
-  width: 80%;
-}
+
 
 .parcours-eric, .atelier-eric {
   opacity: 0;
