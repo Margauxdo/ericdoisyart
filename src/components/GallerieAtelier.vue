@@ -41,17 +41,16 @@ const closeModal = () => {
 </template>
 
 <style scoped>
-
 .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      padding: 20px;
-      max-width: 1800px;
-      width: 100%;
-      justify-content: center;
-      align-content: center;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0px;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0px;
+  justify-content: center;
+  align-content: center;
 }
 
 .thumbnail img {
@@ -118,5 +117,42 @@ const closeModal = () => {
 .close-btn:hover {
   background: #f44336;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0px;
+  }
+
+  .thumbnail img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .thumbnail img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+  }
 }
 </style>

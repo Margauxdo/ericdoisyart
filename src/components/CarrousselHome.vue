@@ -93,4 +93,59 @@ export default {
   height: 16px;
   opacity: 1;
 }
+
+
+@media screen and (max-width: 1024px) {
+  .carousel-container {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .carousel-image {
+    height: 700px;
+  }
+
+  :deep(.swiper-pagination) {
+    bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+
+  .carousel-image {
+    height: 550px;
+  }
+
+  :deep(.swiper-pagination) {
+    bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-container {
+    clip-path: none;
+  }
+
+  .carousel-image {
+    height: 400px; /* Ajustement de la hauteur */
+    filter: brightness(0.6);
+  }
+
+  :deep(.swiper-pagination) {
+    bottom: 50px;
+  }
+
+  :deep(.swiper-pagination-bullet) {
+    width: 10px;
+    height: 10px;
+  }
+
+  :deep(.swiper-pagination-bullet-active) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
 </style>

@@ -20,6 +20,8 @@
 <script setup>
 import { defineProps, computed } from "vue";
 
+
+
 const props = defineProps(["selectedSupport"]);
 
 const oeuvres = [
@@ -124,14 +126,14 @@ const filteredOeuvres = computed(() => {
 <style scoped>
 .gallery {
   max-width: 1500px;
-      width: 100%;
-      margin: auto;
-      justify-content: center;
-      align-content: center;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 100px;
-      padding: 50px;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+  align-content: center;
 }
 
 .artwork-container {
@@ -143,14 +145,19 @@ const filteredOeuvres = computed(() => {
 
 .artwork-image {
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.artwork-container:hover .artwork-image {
+  transform: scale(1.05);
 }
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -164,14 +171,48 @@ const filteredOeuvres = computed(() => {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
-.overlay p{
- color:#c48c00;
- text-transform:uppercase;
- padding:20px;
- font-weight:bold;
-}
 
 .artwork-container:hover .overlay {
   opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  color: #c48c00;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .artwork-image {
+    width: 100%;
+  }
 }
 </style>

@@ -2,19 +2,19 @@
   <h1 class="fade-in">Formulaire de contact</h1>
   <div class="form-container fade-in">
     <form @submit.prevent="sendEmail">
-      <div>
+      <div class="form-group">
         <label for="name">Nom :</label>
         <input type="text" id="name" v-model="form.name" required />
       </div>
-      <div>
+      <div class="form-group">
         <label for="email">Email :</label>
         <input type="email" id="email" v-model="form.email" required />
       </div>
-      <div>
+      <div class="form-group">
         <label for="phone">Téléphone :</label>
         <input type="text" id="phone" v-model="form.phone" />
       </div>
-      <div>
+      <div class="form-group">
         <label for="message">Message :</label>
         <textarea id="message" v-model="form.message" required></textarea>
       </div>
@@ -28,7 +28,10 @@
         ></vue-recaptcha>
       </div>
 
-      <button type="submit" :disabled="!captchaVerified">Envoyer</button>
+      <!-- Bouton centré -->
+      <div class="button-container">
+        <button type="submit" :disabled="!captchaVerified">Envoyer</button>
+      </div>
     </form>
   </div>
 </template>
@@ -92,6 +95,7 @@ export default {
 </script>
 
 <style scoped>
+/* Animation */
 h1 {
   text-align: center;
   opacity: 0;
@@ -103,6 +107,9 @@ h1 {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 1s ease-out, transform 1s ease-out;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
 }
 
 .visible {
@@ -112,35 +119,53 @@ h1 {
 
 form {
   max-width: 850px;
-  margin: auto;
-  padding: 1em;
+  width: 80%;
+  padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #014961;
-  padding: 80px 50px;
-  margin-bottom: 100px;
   box-shadow: 4px 8px 15px 1px #919191;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
 }
 
-form div {
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   margin-bottom: 1em;
 }
 
 form label {
   margin-bottom: 0.5em;
   color: #c48c00;
-  display: block;
+  display: flex;
   font-size: 18px;
 }
 
 form input,
-form textarea,
-form button {
+form textarea {
   border: 1px solid #cccccc;
-  padding: 0.5em;
+  padding: 0.8em;
   font-size: 16px;
-  width: 100%;
+  width: 80%;
   border-radius: 5px;
+  margin: auto;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 form button {
@@ -148,6 +173,11 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 18px;
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 form button:hover {
@@ -159,53 +189,49 @@ form button:hover {
   margin-bottom: 15px;
 }
 
-
 @media screen and (max-width: 1024px) {
-  /* Tablette horizontale */
+  form {
+    max-width: 700px;
+    width: 80%;
+  }
 
-  .form-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    form {
-      max-width: 700px;
-      width: 80%;
-      padding: 50px 30px;
-    }
+  form input,
+  form textarea {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  /* Tablette verticale */
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   form {
     max-width: 550px;
     width: 85%;
-    padding: 40px 20px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  form button {
+    width: 250px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* Téléphone */
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  form {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
   }
 
-  form {
-    max-width: 450px;
-    width: 90%;
-    padding: 30px 15px;
-    box-shadow: none;
+  form input,
+  form textarea {
+    width: 95%;
+  }
+
+  form button {
+    width: 100%;
+    max-width: 250px;
   }
 }
-</style>s
+</style>

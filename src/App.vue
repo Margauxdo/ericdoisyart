@@ -49,13 +49,12 @@ body{
   //background:#01496161;
   background-color:hsla(260,11%,85%,1);
   box-sizing: border-box;
-
   width: 100%;
 }
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 150px;
+  right: 50px;
   background: #c48c00;
   color: white;
   border: none;
@@ -140,6 +139,8 @@ p{
       width: 45px;
       height: 45px;
       font-size: 22px;
+      bottom: 130px;
+      right: 50px;
     }
 
     h1, h2 {
@@ -187,8 +188,8 @@ p{
       width: 40px;
       height: 40px;
       font-size: 20px;
-      bottom: 15px;
-      right: 15px;
+      bottom: 30px;
+      right: 50px;
     }
   }
 
@@ -207,8 +208,8 @@ p{
       width: 35px;
       height: 35px;
       font-size: 18px;
-      bottom: 10px;
-      right: 10px;
+      bottom: 50px;
+      right: 50px;
     }
   }
 

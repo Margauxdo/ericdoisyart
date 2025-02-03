@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background:#014961;
+  background: #014961;
 }
 
 .logo {
@@ -28,41 +28,27 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
 }
 
-
-
 @media screen and (max-width: 1024px) {
-  .logo-container {
-    height: 130px;
-  }
-
   .logo {
     width: 250px;
   }
 }
 
-
-@media screen and (max-width: 767px) {
-  .logo-container {
-    height: 120px;
-  }
-
+@media screen and (max-width: 768px) {
   .logo {
     width: 200px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .logo-container {
-    height: 100px;
-  }
-
   .logo {
     width: 150px;
   }
+
+  .logo-container {
+    height: 120px;
+  }
 }
-
-
 </style>
