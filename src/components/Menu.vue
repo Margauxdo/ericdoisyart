@@ -176,7 +176,7 @@ li:hover .submenu {
 @media screen and (max-width: 480px) {
   nav {
     justify-content: center;
-    height:90px;
+
   }
 
   .burger {
