@@ -5,11 +5,14 @@
 
     <div class="gallery">
       <div v-for="(oeuvre, index) in filteredOeuvres" :key="index" class="artwork-container">
+      <a href="#" @click.prevent="openImage(oeuvre.image)">
         <img :src="oeuvre.image" :alt="oeuvre.title" class="artwork-image" />
+        </a>
         <div class="overlay">
           <h3 class="title">{{ oeuvre.title }}</h3>
           <p class="technique">{{ oeuvre.technique }} - {{ oeuvre.support }}</p>
           <p class="dimension">{{ oeuvre.dimension }} - {{ oeuvre.support }}</p>
+          <a href="/contact" class="contact-button">Contacter l'artiste</a>
         </div>
       </div>
     </div>
@@ -20,6 +23,8 @@
 import { defineProps, computed } from "vue";
 
 const props = defineProps(["selectedSupport"]);
+
+
 
 const oeuvres = [
   { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/src/assets/neo/acier/my_monster.jpg" },
@@ -122,6 +127,23 @@ const filteredOeuvres = computed(() => {
   text-transform: uppercase;
   padding: 5px;
   font-weight: bold;
+}
+
+.contact-button {
+  margin-top: 10px;
+  margin-bottom:20px;
+  padding: 8px 15px;
+  background: #c48c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #a36f00;
 }
 
 @media screen and (max-width: 1024px) {

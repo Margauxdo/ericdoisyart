@@ -50,6 +50,7 @@ body{
   background-color:hsla(260,11%,85%,1);
   box-sizing: border-box;
   width: 100%;
+  overflow-x:hidden;
 }
 .scroll-to-top {
   position: fixed;

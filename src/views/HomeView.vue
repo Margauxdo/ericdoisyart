@@ -13,9 +13,7 @@
     <div class="expos">
       <h2> Mes expositions </h2>
       <div class="affiche">
-        <div v-for="(image, index) in images" :key="index" class="image-container">
-          <img :src="image" :alt="'Exposition ' + (index + 1)" class="image-grid" @click="openImage(image)" @error="(event) => event.target.style.background = 'black'" />
-        </div>
+        <ImageSliderExpos/>
       </div>
     </div>
     <div class="imgPeintre">
@@ -30,13 +28,9 @@
 <script setup>
 import { ref } from "vue";
 import CarrousselHome from "@/components/CarrousselHome.vue";
+import ImageSliderExpos from "@/components/ImageSliderExpos.vue";
 
-const images = ref([
-  "/src/assets/img-noexpos.png",
-  "/src/assets/img-noexpos2.png",
-  //"/src/assets/img-nosexpos3.png",
-  "/src/assets/event/publication_siteweb_mars_2025.png"
-]);
+
 
 const modalImage = ref(null);
 
@@ -50,6 +44,7 @@ const closeImage = () => {
 </script>
 
 <style scoped>
+
 main {
   margin-top: 0px;
   text-align: center;
@@ -62,10 +57,12 @@ main {
   background: #014961;
   padding-top: 30px;
   padding-bottom: 50px;
-  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 86%);
 }
 .expos h2{
    color:#c48c00;
+   font-family: "kiln-sans", sans-serif;
+   margin-top:100px;
 }
 
 .carroussel {
@@ -98,7 +95,7 @@ main {
   gap: 50px;
   max-width: 1200px;
   margin: auto;
-  padding: 20px;
+  padding-bottom: 60px;
 }
 
 .image-container {
@@ -154,8 +151,10 @@ main {
 
 .imgPeintre {
   width: 100%;
-  max-height: 300px;
   overflow: hidden;
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+  position: relative;
+  top: -120px;
 }
 
 .imgPeintre img {
@@ -167,5 +166,36 @@ main {
   position: static;
   justify-content: center;
   align-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .animated-text{
+      font-size: 25px;
+      font-weight: 200;
+      color: #c48c00;
+      padding-top: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+  .animated-text{
+          font-size: 18px;
+          font-weight: 100;
+          padding-top: 40px;
+          max-width: 400px;
+  }
+  .expos{
+      background: #014961;
+      padding-top: 30px;
+      padding-bottom: 50px;
+      clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 86%);
+  }
+
 }
 </style>

@@ -209,7 +209,7 @@ form button:hover {
 
   form input,
   form textarea {
-    width: 100%;
+    width: 90%;
   }
 
   form button {

@@ -52,7 +52,7 @@ export default {
   margin-top: -100px;
   overflow: hidden;
   position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
 }
 
 .slide-content {
@@ -124,9 +124,7 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
-  .carousel-container {
-    clip-path: none;
-  }
+
 
   .carousel-image {
     height: 400px; /* Ajustement de la hauteur */

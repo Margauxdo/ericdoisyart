@@ -78,7 +78,7 @@ onUnmounted(() => {
 
 <style scoped>
 nav {
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -176,11 +176,12 @@ li:hover .submenu {
 @media screen and (max-width: 480px) {
   nav {
     justify-content: center;
-    height:80px;
+    height:90px;
   }
 
   .burger {
     display: flex;
+    cursor: pointer;
   }
 
   nav ul {
@@ -188,7 +189,7 @@ li:hover .submenu {
   }
 
   .menu-open {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     position: fixed;
     top: 100px;

@@ -5,11 +5,15 @@
 
     <div class="gallery">
       <div v-for="(oeuvre, index) in filteredOeuvres" :key="index" class="artwork-container">
+      <a href="#" @click.prevent="openImage(oeuvre.image)">
         <img :src="oeuvre.image" :alt="oeuvre.title" class="artwork-image" />
+        </a>
         <div class="overlay">
           <h3 class="title">{{ oeuvre.title }}</h3>
           <p class="technique">{{ oeuvre.technique }} - {{ oeuvre.support }}</p>
           <p class="dimension">{{ oeuvre.dimension }} - {{ oeuvre.support }}</p>
+          <a href="/contact" class="contact-button">Contacter l'artiste</a>
+
 
         </div>
       </div>
@@ -187,6 +191,8 @@ const filteredOeuvres = computed(() => {
   padding: 5px;
   font-weight: bold;
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .gallery {
