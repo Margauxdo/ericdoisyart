@@ -13,21 +13,27 @@
           <p class="technique">{{ oeuvre.technique }} - {{ oeuvre.support }}</p>
           <p class="dimension">{{ oeuvre.dimension }} - {{ oeuvre.support }}</p>
           <a href="/contact" class="contact-button">Contacter l'artiste</a>
+          <button class="view-button" @click="openFullScreen(oeuvre.image)">Voir en grand</button>
         </div>
       </div>
     </div>
+
+    <!-- image plein ecran-->
+        <div v-if="fullScreenImage" class="full-screen-view" @click="closeFullScreen">
+              <img :src="fullScreenImage" class="full-screen-image" />
+            </div>
+
   </div>
 </template>
 
 <script setup>
-import { defineProps, computed } from "vue";
+import { defineProps, computed, ref } from "vue";
 
 const props = defineProps(["selectedSupport"]);
-
+const fullScreenImage = ref(null);
 
 
 const oeuvres = [
-  { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/src/assets/neo/acier/my_monster.jpg" },
   { title: "Blue", technique: "Techniques mixtes: stick à l’huile, pastel grasse, aquarelle, feutre", dimension: " 43/43 ", support: "Bois", image: "/src/assets/neo/bois/blue.jpeg" },
   { title: "El croco", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre", dimension: " 206/30 ", support: "Bois", image: "/src/assets/neo/bois/el_croco.jpg" },
   { title: "Fragile", technique: "Techniques mixtes: stick à l’huile, pastel grasse, feutre, collage ", dimension: " 21/24 ", support: "Bois", image: "/src/assets/neo/bois/fragile.JPEG" },
@@ -52,6 +58,7 @@ const oeuvres = [
   { title: "Salut ça va!", technique: "Techniques mixtes – pastel grasse, huile, acrylique, collage, feutre et bombe aérosol", dimension: " 80/80 ", support: "Toile", image: "/src/assets/neo/toile/salutcava.JPEG" },
   { title: "We can do it", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 100/100 ", support: "Toile", image: "/src/assets/neo/toile/wecandoit.JPEG" },
   { title: "Why", technique: "mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/src/assets/neo/toile/why.jpeg" },
+  { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/src/assets/neo/acier/my_monster.jpg" },
 
 
 
@@ -62,6 +69,14 @@ const filteredOeuvres = computed(() => {
     ? oeuvres.filter(oeuvre => oeuvre.support === props.selectedSupport)
     : oeuvres;
 });
+
+const openFullScreen = (imageSrc) => {
+  fullScreenImage.value = imageSrc;
+};
+
+const closeFullScreen = () => {
+  fullScreenImage.value = null;
+};
 </script>
 
 <style scoped>
@@ -144,6 +159,42 @@ const filteredOeuvres = computed(() => {
 
 .contact-button:hover {
   background: #a36f00;
+}
+
+.view-button {
+  margin-top: 10px;
+  margin-bottom:20px;
+  padding: 8px 15px;
+  background: #c48c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.view-button:hover {
+  background: #a36f00;
+}
+
+.full-screen-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen-image {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 @media screen and (max-width: 1024px) {

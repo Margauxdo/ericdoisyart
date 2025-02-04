@@ -5,9 +5,9 @@
     </div>
     <div class="text">
       <h3 class="animated-text">
-        "Eric Doisy, peintre plasticien néo-expressionniste, mêle abstraction et
-        techniques mixtes pour créer des œuvres uniques et vibrantes, entre
-        émotion et audace."
+        "Artiste peintre plasticien , techniques mixtes
+        (Néo-expressionisme - Figuratif)
+        "
       </h3>
     </div>
     <div class="expos">
@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="imgPeintre">
-      <img src="/src/assets/peintre.jpg" @error="(event) => event.target.style.background = 'black'" />
+      <img src="/src/assets/atelier/atelier9.gif" @error="(event) => event.target.style.background = 'black'" />
     </div>
     <div v-if="modalImage" class="modal" @click="closeImage">
       <img :src="modalImage" class="modal-content" @error="(event) => event.target.style.background = 'black'" />
@@ -159,9 +159,9 @@ main {
 
 .imgPeintre img {
   width: 100%;
-  height: 500px;
+  height: 700px;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   display: flex;
   position: static;
   justify-content: center;
@@ -179,7 +179,9 @@ main {
 }
 
 @media (max-width: 768px) {
-
+.imgPeintre img {
+  height:500px;
+}
 
 }
 
@@ -195,6 +197,9 @@ main {
       padding-top: 30px;
       padding-bottom: 50px;
       clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 86%);
+  }
+  .imgPeintre img {
+    height:200px;
   }
 
 }
