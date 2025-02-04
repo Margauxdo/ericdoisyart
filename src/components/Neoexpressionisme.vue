@@ -97,6 +97,8 @@ const closeFullScreen = () => {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width:100%;
+  height:500px;
 }
 
 .artwork-image {
@@ -203,6 +205,20 @@ const closeFullScreen = () => {
     gap: 25px;
     padding: 15px;
   }
+  .overlay {
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .artwork-container{
+    height:500px;
+    }
+    .view-button , .contact-button{
+    margin-bottom:20px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -211,6 +227,14 @@ const closeFullScreen = () => {
     gap: 20px;
     padding: 10px;
   }
+  .overlay {
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -223,5 +247,13 @@ const closeFullScreen = () => {
   .artwork-image {
     width: 100%;
   }
+  .overlay {
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; /* Ajout d'un espace entre les éléments */
+    }
 }
 </style>
