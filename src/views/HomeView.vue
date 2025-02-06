@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="imgPeintre">
-      <img src="/src/assets/atelier/atelier9.gif" @error="(event) => event.target.style.background = 'black'" />
+      <img src="/src/assets/atelier/peintre-2.jpg" @error="(event) => event.target.style.background = 'black'" />
     </div>
     <div v-if="modalImage" class="modal" @click="closeImage">
       <img :src="modalImage" class="modal-content" @error="(event) => event.target.style.background = 'black'" />
@@ -152,20 +152,21 @@ main {
 .imgPeintre {
   width: 100%;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
   position: relative;
   top: -120px;
 }
 
 .imgPeintre img {
   width: 100%;
-  height: 700px;
-  object-fit: cover;
-  object-position: top;
-  display: flex;
-  position: static;
-  justify-content: center;
-  align-content: space-around;
+      height: 100%;
+      object-fit: cover;
+      object-position: unset;
+      display: flex;
+      position: relative;
+      justify-content: static;
+      align-content: space-around;
+      z-index: -1000;
+      //top: -500px;
 }
 
 @media (max-width: 1024px) {
@@ -197,6 +198,9 @@ main {
       padding-top: 30px;
       padding-bottom: 50px;
       clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 86%);
+  }
+  .imgPeintre{
+    top:-87px;
   }
   .imgPeintre img {
     height:200px;

@@ -8,6 +8,7 @@ const images = [
   { id: 6, src: '/src/assets/atelier/atelier7.jpg', alt: 'Image 7' },
   { id: 7, src: '/src/assets/atelier/atelier8.jpg', alt: 'Image 8' },
   { id: 4, src: '/src/assets/atelier/atelier4.jpg', alt: 'Image 4' },
+  { id: 11, src: '/src/assets/atelier/atelier14.png', alt: 'Image 11' },
 
   { id: 8, src: '/src/assets/atelier/atelier9.gif', alt: 'Image 9' },
   { id: 10, src: '/src/assets/atelier/atelier13.jpg', alt: 'Image 13' },

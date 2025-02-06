@@ -8,6 +8,14 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue";
       <h2>Mon atelier</h2>
 
       <div class="contain-atelier">
+      <div class="bloc-video">
+      <div class="atelier-video">
+      <video class="atelier-video" controls>
+        <source src="@/assets/video/IMG_7459.mov" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+
+      </div>
         <div class="text-atelier">
           <p>
             Mon atelier se situe dans une ancienne école d’art qui a été transformée en lieu de partage et de création
@@ -16,6 +24,7 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue";
             leurs empreintes dans ces murs…..<br />
             C’est un vrai lieu de travail, d’inspiration et de bien-être pour moi et je vous y accueille sur demande avec grand plaisir.
           </p>
+        </div>
         </div>
         <div class="gallery-atelier">
           <GallerieAtelier />
@@ -41,9 +50,21 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue";
   padding-top: 20px;
   border-left: ridge;
 }
+.atelier-video{
+      margin-top: 30px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: relative;
+      margin: 0px;
+      height:500px;
+      border-radius:15px;
+
+}
 
 
-/* 🔹 Tablette horizontale (1024px) */
+
 @media screen and (max-width: 1024px) {
   .contain-atelier {
     max-width: 900px;
