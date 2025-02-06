@@ -36,7 +36,7 @@ export default {
   },
   setup() {
     const images = ref([
-      "/src/assets/event/publication_siteweb_mars_2025.png",
+      "/src/assets/publication_siteweb_mars_2025.png",
       "/src/assets/img-noexpos.png",
 
     ]);

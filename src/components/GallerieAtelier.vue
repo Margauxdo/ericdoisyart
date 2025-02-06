@@ -2,19 +2,19 @@
 import { ref } from 'vue';
 
 const images = [
-  { id: 1, src: '/src/assets/atelier/atelier1.jpg', alt: 'Image 1' },
-  { id: 2, src: '/src/assets/atelier/atelier2.jpg', alt: 'Image 2' },
-  { id: 5, src: '/src/assets/atelier/atelier5.jpg', alt: 'Image 5' },
-  { id: 6, src: '/src/assets/atelier/atelier7.jpg', alt: 'Image 7' },
-  { id: 7, src: '/src/assets/atelier/atelier8.jpg', alt: 'Image 8' },
-  { id: 4, src: '/src/assets/atelier/atelier4.jpg', alt: 'Image 4' },
-  { id: 11, src: '/src/assets/atelier/atelier14.png', alt: 'Image 11' },
+  { id: 1, src: '/src/assets/atelier1.jpg', alt: 'Image 1' },
+  { id: 2, src: '/src/assets/atelier2.jpg', alt: 'Image 2' },
+  { id: 5, src: '/src/assets/atelier5.jpg', alt: 'Image 5' },
+  { id: 6, src: '/src/assets/atelier7.jpg', alt: 'Image 7' },
+  { id: 7, src: '/src/assets/atelier8.jpg', alt: 'Image 8' },
+  { id: 4, src: '/src/assets/atelier4.jpg', alt: 'Image 4' },
+  { id: 11, src: '/src/assets/atelier14.png', alt: 'Image 11' },
 
-  { id: 8, src: '/src/assets/atelier/atelier9.gif', alt: 'Image 9' },
-  { id: 10, src: '/src/assets/atelier/atelier13.jpg', alt: 'Image 13' },
-  { id: 9, src: '/src/assets/atelier/atelier10.jpg', alt: 'Image 10' },
+  { id: 8, src: '/src/assets/atelier9.gif', alt: 'Image 9' },
+  { id: 10, src: '/src/assets/atelier13.jpg', alt: 'Image 13' },
+  { id: 9, src: '/src/assets/atelier10.jpg', alt: 'Image 10' },
 
-  { id: 3, src: '/src/assets/atelier/atelier3.jpg', alt: 'Image 3' },
+  { id: 3, src: '/src/assets/atelier3.jpg', alt: 'Image 3' },
 
 ];
 

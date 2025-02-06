@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="imgPeintre">
-      <img src="/src/assets/atelier/peintre-2.jpg" @error="(event) => event.target.style.background = 'black'" />
+      <img src="/src/assets/peintre-2.jpg" @error="(event) => event.target.style.background = 'black'" />
     </div>
     <div v-if="modalImage" class="modal" @click="closeImage">
       <img :src="modalImage" class="modal-content" @error="(event) => event.target.style.background = 'black'" />

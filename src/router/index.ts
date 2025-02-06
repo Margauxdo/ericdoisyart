@@ -1,72 +1,67 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/HomeView.vue'; // Assurez-vous que le fichier existe
+import HomeView from '@/views/HomeView.vue';
 import MailView from '@/views/MailView.vue';
 import PhoneView from '@/views/PhoneView.vue';
+import NotFoundView from '@/views/NotFoundView.vue';
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue'), // Si `HomeView` n'est pas importé en haut
-    },
-    {
-      path: '/histoire',
-      name: 'Mon histoire',
-      component: () => import('../views/MyHistoryView.vue'),
-    },
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: HomeView,
+  },
+  {
+    path: '/histoire',
+    name: 'Mon histoire',
+    component: () => import('../views/MyHistoryView.vue'),
+  },
   {
     path: '/hub',
     name: 'Hub',
     beforeEnter() {
-           // Redirection vers un site externe
-           window.location.href = 'https://linktr.ee/ericdoisy';
-         },
+      window.location.href = 'https://linktr.ee/ericdoisy';
+      return false;
     },
+  },
   {
     path: '/creations',
     name: 'Mes créations',
     component: () => import('../views/MyCreationsView.vue'),
   },
-    {
-      path: '/contact',
-      name: 'Contact',
-      component: () => import('../views/ContactView.vue'),
-    },
-  { path: '/mail',
-    name: 'MailView',
-    component: MailView
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/ContactView.vue'),
   },
-  { path: '/phone',
+  {
+    path: '/mail',
+    name: 'MailView',
+    component: MailView,
+  },
+  {
+    path: '/phone',
     name: 'PhoneView',
-    component: PhoneView
-    },
-  ],
+    component: PhoneView,
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: NotFoundView,
+  },
+];
 
- scrollBehavior(to) {
-    // Si une ancre (#) est présente dans l'URL, scroll vers l'élément correspondant
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
+  scrollBehavior(to) {
     if (to.hash) {
-      const element = document.querySelector(to.hash);
-      if (element) {
-        return { el: to.hash, behavior: "smooth" };
-      }
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
     }
-    // Scroll en haut si aucune ancre
     return { top: 0 };
   },
-
-scrollBehavior(to, from, savedPosition) {
-  if (to.hash) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({ el: to.hash, behavior: "smooth" });
-      }, 500); // Délai pour s'assurer que le DOM est chargé
-    });
-  }
-  return { top: 0 };
-}
-
 });
 
 export default router;

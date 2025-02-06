@@ -11,7 +11,7 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue";
       <div class="bloc-video">
       <div class="atelier-video">
       <video class="atelier-video" controls>
-        <source src="@/assets/video/IMG_7459.mov" type="video/mp4">
+        <source src="@/assets/IMG_7459.mov" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
 
