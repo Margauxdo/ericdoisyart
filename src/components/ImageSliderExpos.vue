@@ -36,8 +36,8 @@ export default {
   },
   setup() {
     const images = ref([
-      "/src/assets/publication_siteweb_mars_2025.png",
-      "/src/assets/img-noexpos.png",
+      "/publication_siteweb_mars_2025.png",
+      "/img-noexpos.png",
 
     ]);
     const hoveredIndex = ref(null);

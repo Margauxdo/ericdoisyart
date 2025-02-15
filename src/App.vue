@@ -45,8 +45,7 @@ onMounted(() => {
 
 <style>
 body{
-  //background-color:#e9e9e9;
-  //background:#01496161;
+
   background-color:hsla(260,11%,85%,1);
   box-sizing: border-box;
   width: 100%;
@@ -133,7 +132,6 @@ p{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 15px 0;
     }
 
     .scroll-to-top {
@@ -164,7 +162,6 @@ p{
     header {
       flex-direction: column;
       align-items: center;
-      padding: 10px 0;
     }
 
     main {

@@ -3,7 +3,7 @@
     <h1>Erreur 404</h1>
     <p>La page que vous recherchez n'existe pas.</p>
 
-    <img src="/src/assets/perso.png" alt="personnage">
+    <img src="/perso.png" alt="personnage">
     <router-link  class="button" to="/">Retour à l'accueil</router-link>
   </div>
 </template>

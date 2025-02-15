@@ -75,7 +75,7 @@ const updateFilter = (filter) => {
 
 @media screen and (max-width: 1024px) {
   .filter-button {
-    top: 250px;
+    top: 280px;
     right: 100px;
     padding: 15px;
     font-size: 14px;

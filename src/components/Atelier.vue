@@ -10,10 +10,11 @@ import GallerieAtelier from "@/components/GallerieAtelier.vue";
       <div class="contain-atelier">
       <div class="bloc-video">
       <div class="atelier-video">
-      <video class="atelier-video" controls>
+      <video ref="videoElement" class="atelier-video" autoplay muted playsinline controls>
         <source src="@/assets/IMG_7459.mov" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
+
 
       </div>
         <div class="text-atelier">

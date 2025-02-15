@@ -19,39 +19,27 @@
           </div>
           <div class="presentation">
             <p>
-              M’inspirant de l’univers vintage et du street art, je combine les supports classiques et les
-              techniques propres au street art telles que la bombe aérosol, le pochoir, la peinture
-              acrylique et les collages.<br>
-              Très orienté sur le sujet féminin, j’essaie de capter un mouvement, un regard. En
-              cherchant à créer des œuvres dynamiques sur différents supports, dont tous pourraient
-              s’apparenter à des murs. Sur chacune de mes œuvres se cache une petite tête, c’est ma
-              signature graphique.<br>
-              Depuis peu, mon art évolue vers le cubisme, l’art naïf/brut, le néo-expressionnisme ce qui
-              me permet d’avoir une liberté plastique sans limite.<br>
-              Mes nouvelles réalisations sont une évolution vers une spontanéité picturale vers la
-              couleur, le trait...<br>
-              Mon art actuel est quelque chose de libre et expressif comme l’art brut / naïf pour cette
-              liberté plastique sans limite et authentique.<br>
-              J’ai débuté ma carrière en tant que commercial avant de me convertir en décorateur, où
-              j’ai commencé à designer des lampes en carton, plexiglass, bois,.... Ma rencontre avec un
-              graffeur a marqué un tournant décisif dans mon parcours.<br>
-              Fasciné par les techniques du pochoir, je les ai d’abord appliquées à mes créations de
-              lampes avant de les expérimenter sur des surfaces planes. J’explore également le collage
-              ainsi que d’autres techniques artistiques. Admiratif de l’œuvre de JM Basquiat, j’ai
-              ressenti une forte aspiration à intégrer ce « petit truc en plus » dans mon propre travail.<br>
-              Cette introspection m’a mené à effacer progressivement mes pochoirs, cherchant à
-              transcender la technique pour atteindre une expression plus libre et instinctive.<br>
-              Mon processus créatif ne suit pas de séries prédéfinies ; je retravaille souvent mes œuvres
-              antérieures tout en conservant des éléments de pochoir en filigrane.<br>
-              Mon travail est marqué par une superposition et une profondeur, témoignages de mon
-              approche instinctive du dessin.<br>
-              Constamment en quête de nouveautés, je traverse un long processus de maturation et de
-              décantation artistique.<br>
-              L’œil est un motif récurrent dans mon œuvre, symbolisant le mouvement et le regard, qu’il
-              soit introspectif ou tourné vers le monde. Ce motif pourrait être interprété comme un reflet
-              de moi-même, une découverte qui se fait souvent a posteriori.<br>
-              Je recherche à voir mes œuvres vivre indépendamment de moi laissant libre cours à
-              l’imagination du spectateur pour s’imprégner de mon travail.
+              M’inspirant de l’univers vintage et du street art, je combine les supports classiques et les techniques propres au street art telles que la bombe aérosol, le pochoir, la peinture acrylique et les collages.
+
+              Depuis peu, mon art évolue vers le cubisme, l’art naïf/brut, le néo-expressionnisme, ce qui me permet d’avoir une liberté plastique sans limite.
+
+              Mes nouvelles réalisations sont une évolution vers une spontanéité picturale, vers la couleur, le trait...</br>
+
+              Mon art actuel est quelque chose de libre et expressif, comme l’art brut / naïf pour cette liberté plastique sans limite et authentique.</br>
+
+              J’ai débuté ma carrière en tant que commercial avant de me convertir en décorateur, où j’ai commencé à designer des lampes en carton, plexiglass, bois... Ma rencontre avec un graffeur a marqué un tournant décisif dans mon parcours.
+
+              Cette introspection m’a mené à effacer progressivement mes pochoirs, cherchant à transcender la technique pour atteindre une expression plus libre et instinctive.</br>
+
+              Mon processus créatif ne suit pas de séries prédéfinies ; je retravaille souvent mes œuvres antérieures tout en conservant des éléments de pochoir en filigrane.
+
+              Mon travail est marqué par une superposition et une profondeur, témoignages de mon approche instinctive du dessin.</br>
+
+              Constamment en quête de nouveautés, je traverse un long processus de maturation et de décantation artistique.
+
+              L’œil est un motif récurrent dans mon œuvre, symbolisant le mouvement et le regard, qu’il soit introspectif ou tourné vers le monde. Ce motif pourrait être interprété comme un reflet de moi-même, une découverte qui se fait souvent a posteriori.
+
+              Je recherche à voir mes œuvres vivre indépendamment de moi, laissant libre cours à l’imagination du spectateur pour s’imprégner de mon travail.
             </p>
           </div>
         </div>

@@ -1,10 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory} from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import MailView from '@/views/MailView.vue';
 import PhoneView from '@/views/PhoneView.vue';
 import NotFoundView from '@/views/NotFoundView.vue';
 
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
@@ -13,25 +14,18 @@ const routes = [
   {
     path: '/histoire',
     name: 'Mon histoire',
-    component: () => import('../views/MyHistoryView.vue'),
+    component: () => import('@/views/MyHistoryView.vue'),
   },
-  {
-    path: '/hub',
-    name: 'Hub',
-    beforeEnter() {
-      window.location.href = 'https://linktr.ee/ericdoisy';
-      return false;
-    },
-  },
+
   {
     path: '/creations',
     name: 'Mes créations',
-    component: () => import('../views/MyCreationsView.vue'),
+    component: () => import('@/views/MyCreationsView.vue'),
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: () => import('../views/ContactView.vue'),
+    component: () => import('@/views/ContactView.vue'),
   },
   {
     path: '/mail',
