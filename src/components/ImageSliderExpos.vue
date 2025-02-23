@@ -37,6 +37,8 @@ export default {
   setup() {
     const images = ref([
       "/publication_siteweb_mars_2025.png",
+      "/expo1.jpg",
+      "/expo2.jpg",
       "/img-noexpos.png",
 
     ]);
@@ -74,7 +76,7 @@ export default {
   max-width: 400px;
   transition: transform 0.3s ease-in-out;
   height: auto;
-  border-radius: 25%;
+  border-radius: 15%;
   box-shadow: 3px 3px 4px 1px #001d26;
 }
 

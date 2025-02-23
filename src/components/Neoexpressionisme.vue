@@ -66,12 +66,28 @@ const oeuvres = [
   { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/my_monster.jpg" },
   { title: "New II", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newII.JPG" },
   { title: "New IV", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newIV.JPG" },
-  { title: "New V", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newV.jpg" },
+
   { title: "New VI", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVI.JPG" },
   { title: "New VII", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVII.JPG" },
   { title: "Fashion", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 80/60", support: "Toile", image: "/fashion.JPEG" },
   { title: "Flower", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 91/52", support: "Toile", image: "/flower.JPG" },
   { title: "Liberation", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 120/80", support: "Toile", image: "/liberation.JPEG" },
+  { title: "New I", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 36/36", support: "Toile", image: "/newI.JPEG" },
+  { title: "New VIII", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newVIII.JPEG" },
+  { title: "New IX", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newIX.JPEG" },
+  { title: "New X", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newX.JPEG" },
+ { title: "Desordre", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile, collage", dimension: " 71/37", support: "Bois", image: "/desordre.JPG"},
+  { title: "The first of 2025", technique: "Dans cadre en bois, Techniques mixtes: Stick à l'huile, feutre à l'huile", dimension: " 30/40", support: "Bois", image: "/thefirstof2025.JPG"},
+  { title: "Doute", technique: " Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 120/60", support: "Bois", image: "/doute.JPEG"},
+  { title: "New III", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 60/60", support: "Bois", image: "/new3.JPG"},
+  { title: "No se", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 80/120", support: "Bois", image: "/Nose.JPG"},
+
+ { title: "L'Oeil I", technique: " Techniques mixtes: pastel grasse, feutre", dimension: " 80/60", support: "Bois", image: "/LoeilI.JPG"},
+  { title: "L'Oeil II", technique: "Techniques mixtes: pastel grasse, feutre", dimension: " 80/60", support: "Bois", image: "/loeilII.JPG"},
+  { title: "La fêlure", technique:  "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 88/39", support: "Bois", image: "/lafelure.jpg"},
+  { title: "Francoise", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 77/39", support: "Bois", image: "/francoise.jpg"},
+  { title: "Brut ou pas", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 33/74", support: "Bois", image: "/brutoupas.jpg"},
+
 ];
 
 const filteredOeuvres = computed(() => {
