@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-container">
     <swiper
-      :modules="[Pagination, Autoplay]"
+      :modules="[Pagination, Autoplay, Navigation]"
       :slides-per-view="1"
       :loop="true"
       :navigation="true"
@@ -25,7 +25,7 @@
 <script>
 import { ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -39,6 +39,7 @@ export default {
       "/publication_siteweb_mars_2025.png",
       "/expo1.jpg",
       "/expo2.jpg",
+      "/expo-thumesnil.png",
       "/img-noexpos.png",
 
     ]);
@@ -48,7 +49,7 @@ export default {
       window.open(image, '_blank');
     };
 
-    return { images, hoveredIndex, openImage, Pagination, Autoplay };
+    return { images, hoveredIndex, openImage, Pagination, Autoplay, Navigation };
   },
 };
 </script>

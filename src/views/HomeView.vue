@@ -6,7 +6,7 @@
     <div class="text">
       <h3 class="animated-text">
         "Artiste peintre plasticien , techniques mixtes
-        (Néo-expressionisme - Figuratif)
+        (Néo-expressionisme, expressionnisme, art brut ...)
         "
       </h3>
     </div>

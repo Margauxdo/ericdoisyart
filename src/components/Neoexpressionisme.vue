@@ -87,6 +87,18 @@ const oeuvres = [
   { title: "La fêlure", technique:  "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 88/39", support: "Bois", image: "/lafelure.jpg"},
   { title: "Francoise", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 77/39", support: "Bois", image: "/francoise.jpg"},
   { title: "Brut ou pas", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 33/74", support: "Bois", image: "/brutoupas.jpg"},
+  { title: "Face", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre et bombes aérosol", dimension: " 60/60", support: "Toile", image: "/face.JPG"},
+  { title: "Bonjour", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre et bombes aérosol", dimension: " 60/60", support: "Toile", image: "/bonjour.JPEG"},
+  { title: "My cabot", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/mycabot.JPEG"},
+  { title: "Charlie", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/charlie.JPEG"},
+  { title: "James", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile", dimension: " 36/36", support: "Carton", image: "/james.JPEG"},
+  { title: "Alienation", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/alienation.JPEG"},
+  { title: "Rantanplan", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/rantanplan.JPEG"},
+  { title: "Erase", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/erase.JPEG"},
+  { title: "Color", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/color.JPEG"},
+  { title: "My cat", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre, collage et bombe aérosol ", dimension: " 80/100 ", support: "Bois", image: "/mycat.JPEG"},
+  { title: "Look", technique: "Techniques mixtes: pastel grasse et bombe aérosol ", dimension: " 40/50 ", support: "Toile", image: "/lookv1.JPG"},
+  { title: "Le chaos", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Carton", image: "/lechaos.JPEG"},
 
 ];
 
