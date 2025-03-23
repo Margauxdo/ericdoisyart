@@ -1,6 +1,6 @@
 <template>
   <div class="neo-container">
-    <h2>Néo-expressionisme</h2>
+    <h2>Néo-expressionisme, expressionnisme, art brut ...</h2>
     <p v-if="selectedSupport">Support : {{ selectedSupport }}</p>
 
     <div class="gallery">

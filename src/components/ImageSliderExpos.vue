@@ -36,9 +36,9 @@ export default {
   },
   setup() {
     const images = ref([
-      "/publication_siteweb_mars_2025.png",
+
       "/expo1.jpg",
-      "/expo2.jpg",
+
       "/expo-thumesnil.png",
       "/img-noexpos.png",
 
