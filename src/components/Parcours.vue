@@ -19,27 +19,24 @@
           </div>
           <div class="presentation">
             <p>
-              M’inspirant de l’univers vintage et du street art, je combine les supports classiques et les techniques propres au street art telles que la bombe aérosol, le pochoir, la peinture acrylique et les collages.
+              S’inspirant de l’univers vintage et du street art dans ses débuts (travail du pochoir),
+              Eric combine les supports classiques et les techniques propres au street art telles
+              que la bombe aérosol, le pochoir, la peinture acrylique et les collages.
+              Depuis peu, son art évolue vers l’expressionnisme, l’art brut, naïf, singulier,.... ce
+              qui lui permet d’avoir une liberté plastique sans limite.
+              Ces nouvelles réalisations sont une évolution vers une spontanéité picturale vers la
+              couleur, le trait...
+              Éric Doisy est un artiste contemporain français dont le style se situe entre
+              l’abstraction et la figuration libre, avec une forte empreinte de l’art brut et de
+              l’expressionnisme. Son travail est souvent caractérisé par :
+              <ul>
+              <li><p>Des formes primitives et spontanées, parfois proches du graffiti ou de l’art enfantin.</p></li>
+              <li><p>Une gestuelle très libre, presque automatique, avec un attrait pour l’instantané et l’émotion brute.</p></li>
+              <li><p>Des couleurs vives et contrastées, souvent posées en à-plats ou en traits nerveux.</p></li>
+              <li><p>Un univers peuplé de figures stylisées, de symboles, parfois avec des lettres ou mots isolés.</p></li>
+              <li><p>Une texture importante, souvent obtenue par des superpositions de matières ou une application directe, intuitive.</p></li>
+              </ul>
 
-              Depuis peu, mon art évolue vers le cubisme, l’art naïf/brut, le néo-expressionnisme, ce qui me permet d’avoir une liberté plastique sans limite.
-
-              Mes nouvelles réalisations sont une évolution vers une spontanéité picturale, vers la couleur, le trait...</br>
-
-              Mon art actuel est quelque chose de libre et expressif, comme l’art brut / naïf pour cette liberté plastique sans limite et authentique.</br>
-
-              J’ai débuté ma carrière en tant que commercial avant de me convertir en décorateur, où j’ai commencé à designer des lampes en carton, plexiglass, bois... Ma rencontre avec un graffeur a marqué un tournant décisif dans mon parcours.
-
-              Cette introspection m’a mené à effacer progressivement mes pochoirs, cherchant à transcender la technique pour atteindre une expression plus libre et instinctive.</br>
-
-              Mon processus créatif ne suit pas de séries prédéfinies ; je retravaille souvent mes œuvres antérieures tout en conservant des éléments de pochoir en filigrane.
-
-              Mon travail est marqué par une superposition et une profondeur, témoignages de mon approche instinctive du dessin.</br>
-
-              Constamment en quête de nouveautés, je traverse un long processus de maturation et de décantation artistique.
-
-              L’œil est un motif récurrent dans mon œuvre, symbolisant le mouvement et le regard, qu’il soit introspectif ou tourné vers le monde. Ce motif pourrait être interprété comme un reflet de moi-même, une découverte qui se fait souvent a posteriori.
-
-              Je recherche à voir mes œuvres vivre indépendamment de moi, laissant libre cours à l’imagination du spectateur pour s’imprégner de mon travail.
             </p>
           </div>
         </div>

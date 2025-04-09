@@ -124,7 +124,6 @@ const oeuvres = [
     { title: "Dance", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, collage/déchirage/grattage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/dance.jpeg" },
     { title: "Bandana", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels grasse, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/bandana.jpeg" },
     { title: "The rose", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile", dimension: " 116/81 ", support: "Toile", image: "/therose.jpg" },
-    { title: "Mats", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile", dimension: " 116/81 ", support: "Toile", image: "/mats.jpg" },
     { title: "Belle", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 120/80 ", support: "Toile", image: "/belle.jpg" },
     { title: "Drag-queen", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/dragqueen.jpg" },
     { title: "Fatale", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 80/120 ", support: "Toile", image: "/fatale.jpg" },
