@@ -90,7 +90,7 @@ const oeuvres = [
     { title: "Peter Tosh", technique: "bombe aérosol, pastels à l'huile", dimension: " 85/60 ", support: "Carton", image: "/petertosh.jpg" },
     { title: "Secrets", technique: "bombe aérosol, tatoo, acrylique", dimension: " 66/97 ", support: "Carton", image: "/secrets.jpg" },
     { title: "Le cri", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/100 ", support: "Toile", image: "/lecri.JPG" },
-    { title: "La fille aux cheveux longs", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, aquarelle, collage", dimension: " 80/80 ", support: "Toile", image: "/lafilleauxcheveuxlongs.JPG" },
+
     { title: "Chaise", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/chaise.JPEG" },
     { title: "Beautiful back tatoo", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/beautifulbacktatoo.JPEG" },
     { title: "No eyes", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/70 ", support: "Toile", image: "/noeyes.JPG" },
