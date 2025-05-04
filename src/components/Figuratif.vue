@@ -152,7 +152,7 @@ const oeuvres = [
     { title: "Couple", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 115/80 ", support: "Bois", image: "/couple2.JPEG" },
     { title: "Ramone", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ramone.JPEG" },
     { title: "Claudia S.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 75/75 ", support: "Bois", image: "/claudias.jpeg" },
-    { title: "James Dean", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/jamesdean.jpeg" },
+
     { title: "Nina H.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ninah.JPEG" },
     { title: "Sean P.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/seanP.JPEG" },
     { title: "Trait de lumière", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 63/122 ", support: "Bois", image: "/traitdelumiere.JPEG" },

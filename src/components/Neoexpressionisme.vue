@@ -99,17 +99,20 @@ const oeuvres = [
   { title: "My cat", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre, collage et bombe aérosol ", dimension: " 80/100 ", support: "Bois", image: "/mycat.JPEG"},
   { title: "Look", technique: "Techniques mixtes: pastel grasse et bombe aérosol ", dimension: " 40/50 ", support: "Toile", image: "/lookv1.JPG"},
   { title: "Le chaos", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Carton", image: "/lechaos.JPEG"},
-  { title: "My rabbit", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/myRabbit.JPEG"},
-  { title: "JMR or not", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/JMBOrNot.JPEG"},
-  { title: "Visage à vif", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 58/122 ", support: "Bois", image: "/visageAVif.JPEG"},
-  { title: "Sous pression", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 39/87 ", support: "Bois", image: "/sousPression.JPEG"},
+  { title: "My rabbit", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/myrabbit.JPEG"},
+  { title: "JMR or not", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/JMBornot.JPEG"},
+  { title: "Visage à vif", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 58/122 ", support: "Bois", image: "/visageavif.JPEG"},
+  { title: "Sous pression", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 39/87 ", support: "Bois", image: "/souspression.JPEG"},
 
-    { title: "Scared", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 24/30 ", support: "Toile", image: "/scared.JPEG"},
-      { title: "Matière", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 46/55 ", support: "Toile", image: "/matieres.JPEG"},
-    { title: "Dualité", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Toile", image: "/dualite.JPEG"},
-          { title: "Masque intérieur", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 80/80 ", support: "Toile", image: "/masqueInterieur.JPEG"},
-    { title: "Ne me regarde pas comme ça", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 60/80 ", support: "Toile", image: "/neMeRegardePasCommeCa.JPEG"},
-          { title: "Le poid du dedans", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 81/100 ", support: "Toile", image: "/lePoidDuDedans.JPEG"},
+  { title: "Scared", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 24/30 ", support: "Toile", image: "/sacred.JPEG"},
+  { title: "Matière", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 46/55 ", support: "Toile", image: "/matieres.JPEG"},
+  { title: "Dualité", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Toile", image: "/dualite.JPEG"},
+  { title: "Masque intérieur", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 80/80 ", support: "Toile", image: "/masqueinterieur.JPEG"},
+  { title: "Ne me regarde pas comme ça", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 60/80 ", support: "Toile", image: "/nemeregardepascommeca.JPEG"},
+  { title: "Le poid du dedans", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 81/100 ", support: "Toile", image: "/lepoiddudedans.JPEG"},
+  { title: "Wired", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 100/100 ", support: "Toile", image: "/wired.JPEG"},
+
+{ title: "Héritage nerveux", technique: "Techniques mixtes: stick à l'huile, pastel gras, acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/heritagenerveux.JPEG"}
 
 
 
