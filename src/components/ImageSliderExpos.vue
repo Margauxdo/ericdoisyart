@@ -37,9 +37,7 @@ export default {
   setup() {
     const images = ref([
 
-      "/expo1.jpg",
 
-      "/expo-thumesnil.png",
       "/img-noexpos.png",
 
     ]);

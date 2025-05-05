@@ -93,7 +93,7 @@ const oeuvres = [
 
     { title: "Chaise", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/chaise.JPEG" },
     { title: "Beautiful back tatoo", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/beautifulbacktatoo.JPEG" },
-    { title: "No eyes", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/70 ", support: "Toile", image: "/noeyes.JPG" },
+
     { title: "Le bar", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/81 ", support: "Toile", image: "/lebar.jpg" },
     { title: "Strange", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/81 ", support: "Toile", image: "/strange.JPEG" },
     { title: "Billy", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 60/40 ", support: "Toile", image: "/billy.JPG" },
@@ -121,7 +121,7 @@ const oeuvres = [
     { title: "Bad girls...", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, collage, brou de noix", dimension: " 80/60 ", support: "Toile", image: "/badgirls.jpg" },
     { title: "The back", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, collage/déchirage/grattage, brou de noix, acrylique", dimension: " 80/60 ", support: "Toile", image: "/theback.jpeg" },
     { title: "Pause kfe", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, collage/déchirage/grattage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/pausekfe.jpeg" },
-    { title: "Dance", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, collage/déchirage/grattage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/dance.jpeg" },
+
     { title: "Bandana", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels grasse, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/bandana.jpeg" },
     { title: "The rose", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile", dimension: " 116/81 ", support: "Toile", image: "/therose.jpg" },
     { title: "Belle", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 120/80 ", support: "Toile", image: "/belle.jpg" },

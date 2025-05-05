@@ -111,9 +111,8 @@ const oeuvres = [
   { title: "Ne me regarde pas comme ça", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 60/80 ", support: "Toile", image: "/nemeregardepascommeca.JPEG"},
   { title: "Le poid du dedans", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 81/100 ", support: "Toile", image: "/lepoiddudedans.JPEG"},
   { title: "Wired", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 100/100 ", support: "Toile", image: "/wired.JPEG"},
-
-{ title: "Héritage nerveux", technique: "Techniques mixtes: stick à l'huile, pastel gras, acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/heritagenerveux.JPEG"}
-
+  { title: "Héritage nerveux", technique: "Techniques mixtes: stick à l'huile, pastel gras, acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/heritagenerveux.JPEG"},
+  { title: "L'autre moi", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage", dimension: " 116/81 ", support: "Toile", image: "/lautremoi.JPEG"}
 
 
 
