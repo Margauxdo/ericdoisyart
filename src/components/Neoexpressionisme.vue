@@ -35,48 +35,43 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
-   { title: "BB", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/BB.JPEG" },
 
-  { title: "Blue", technique: "Techniques mixtes: stick à l’huile, pastel grasse, aquarelle, feutre", dimension: " 43/43 ", support: "Bois", image: "/blue.jpeg" },
-  { title: "El croco", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre", dimension: " 206/30 ", support: "Bois", image: "/el_croco.jpg" },
-  { title: "Fragile", technique: "Techniques mixtes: stick à l’huile, pastel grasse, feutre, collage ", dimension: " 21/24 ", support: "Bois", image: "/fragile.JPEG" },
-  { title: "Horns", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 39/73 ", support: "Bois", image: "/horns.JPG" },
-  { title: "Diane", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Bois", image: "/diane.JPG" },
 
-  { title: "Julienne I", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage.", dimension: " 111/70 ", support: "Bois", image: "/JulienneI.jpg" },
-  { title: "L'oeil III", technique: "Techniques mixtes", dimension: " 60/44 ", support: "Bois", image: "/LoeilIII.JPG" },
-  { title: "L'oeil IV", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Bois", image: "/LoeilIV.JPG" },
-  { title: "L'oeil IX", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 43/44 ", support: "Bois", image: "/LoeilIX.JPG" },
-  { title: "L'oeil VII", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 43/43 ", support: "Bois", image: "/LoeilVII.JPG" },
-  { title: "L'oeil VIII", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Bois", image: "/LoeilVIII.JPEG" },
-  { title: "La flamme", technique: "Techniques mixtes: stick à l’huile,pastel grasse, acrylique, feutre.", dimension: " 73/36 ", support: "Bois", image: "/laflamme.JPG" },
-  { title: "Le trait", technique: "Feutre à l’huile", dimension: " 21/30 ", support: "Bois", image: "/letrait.JPEG" },
-  { title: "Terre", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 50/40 ", support: "Bois", image: "/terre.jpg" },
-  { title: "Indi", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique,feutre, bombe aérosol, collage", dimension: " 81/60 ", support: "Toile", image: "/indi.JPG" },
-  { title: "Julienne II", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 60/60 ", support: "Toile", image: "/julienneII.JPG" },
-  { title: "Julienne III", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage.", dimension: " 80/60 ", support: "Toile", image: "/julienneIII.JPG" },
-  { title: "L'oeil V", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Toile", image: "/loeilV.JPG" },
-  { title: "L'oeil VI", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/100 ", support: "Toile", image: "/loeilVI.JPEG" },
-  { title: "L'oeil X", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 115/75 ", support: "Toile", image: "/loeilX.JPEG" },
-  { title: "Look", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique,collage", dimension: " 80/60 ", support: "Toile", image: "/look.jpeg" },
-  { title: "Return", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 60/40 ", support: "Toile", image: "/return.jpg" },
-  { title: "Salut ça va!", technique: "Techniques mixtes – pastel grasse, huile, acrylique, collage, feutre et bombe aérosol", dimension: " 80/80 ", support: "Toile", image: "/salutcava.JPEG" },
-  { title: "We can do it", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 100/100 ", support: "Toile", image: "/wecandoit.JPEG" },
-  { title: "Why", technique: "mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/why.jpeg" },
-  { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/my_monster.jpg" },
-  { title: "New II", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newII.JPG" },
-  { title: "New IV", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newIV.JPG" },
+{ title: "Tension positive", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/tensionpositive.JPEG"},
 
-  { title: "New VI", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVI.JPG" },
-  { title: "New VII", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVII.JPG" },
-  { title: "Fashion", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 80/60", support: "Toile", image: "/fashion.JPEG" },
-  { title: "Flower", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 91/52", support: "Toile", image: "/flower.JPG" },
-  { title: "Liberation", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 120/80", support: "Toile", image: "/liberation.JPEG" },
-  { title: "New I", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 36/36", support: "Toile", image: "/newI.JPEG" },
-  { title: "New VIII", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newVIII.JPEG" },
-  { title: "New IX", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newIX.JPEG" },
-  { title: "New X", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newX.JPEG" },
- { title: "Desordre", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile, collage", dimension: " 71/37", support: "Bois", image: "/desordre.JPG"},
+{ title: "Frisson violet", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/frissonviolet.JPEG"},
+{ title: "Tête pleine", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre ", dimension: " 70/100 ", support: "Toile", image: "/tetepleine.JPEG"},
+ { title: "L'autre moi", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage", dimension: " 116/81 ", support: "Toile", image: "/lautremoi.JPEG"},
+ { title: "Héritage nerveux", technique: "Techniques mixtes: stick à l'huile, pastel gras, acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/heritagenerveux.JPEG"},
+    { title: "Ne me regarde pas comme ça", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 60/80 ", support: "Toile", image: "/nemeregardepascommeca.JPEG"},
+    { title: "Le poid du dedans", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 81/100 ", support: "Toile", image: "/lepoiddudedans.JPEG"},
+    { title: "Wired", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 100/100 ", support: "Toile", image: "/wired.JPEG"},
+    { title: "Scared", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 24/30 ", support: "Toile", image: "/sacred.JPEG"},
+    { title: "Matière", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 46/55 ", support: "Toile", image: "/matieres.JPEG"},
+    { title: "Dualité", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Toile", image: "/dualite.JPEG"},
+    { title: "Masque intérieur", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 80/80 ", support: "Toile", image: "/masqueinterieur.JPEG"},
+{ title: "Le chaos", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Carton", image: "/lechaos.JPEG"},
+  { title: "My rabbit", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/myrabbit.JPEG"},
+  { title: "JMR or not", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/JMBornot.JPEG"},
+  { title: "Visage à vif", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 58/122 ", support: "Bois", image: "/visageavif.JPEG"},
+  { title: "Sous pression", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 39/87 ", support: "Bois", image: "/souspression.JPEG"},
+ { title: "Erase", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/erase.JPEG"},
+  { title: "Color", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/color.JPEG"},
+  { title: "My cat", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre, collage et bombe aérosol ", dimension: " 80/100 ", support: "Bois", image: "/mycat.JPEG"},
+  { title: "Look", technique: "Techniques mixtes: pastel grasse et bombe aérosol ", dimension: " 40/50 ", support: "Toile", image: "/lookv1.JPG"},
+   { title: "Bonjour", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre et bombes aérosol", dimension: " 60/60", support: "Toile", image: "/bonjour.JPEG"},
+    { title: "My cabot", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/mycabot.JPEG"},
+    { title: "Charlie", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/charlie.JPEG"},
+    { title: "James", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile", dimension: " 36/36", support: "Carton", image: "/james.JPEG"},
+    { title: "Alienation", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/alienation.JPEG"},
+    { title: "Rantanplan", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/rantanplan.JPEG"},
+
+
+
+
+
+
+  { title: "Desordre", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile, collage", dimension: " 71/37", support: "Bois", image: "/desordre.JPG"},
   { title: "The first of 2025", technique: "Dans cadre en bois, Techniques mixtes: Stick à l'huile, feutre à l'huile", dimension: " 30/40", support: "Bois", image: "/thefirstof2025.JPG"},
   { title: "Doute", technique: " Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 120/60", support: "Bois", image: "/doute.JPEG"},
   { title: "New III", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 60/60", support: "Bois", image: "/new3.JPG"},
@@ -88,31 +83,52 @@ const oeuvres = [
   { title: "Francoise", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 77/39", support: "Bois", image: "/francoise.jpg"},
   { title: "Brut ou pas", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre à l'huile", dimension: " 33/74", support: "Bois", image: "/brutoupas.jpg"},
   { title: "Face", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre et bombes aérosol", dimension: " 60/60", support: "Toile", image: "/face.JPG"},
-  { title: "Bonjour", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre et bombes aérosol", dimension: " 60/60", support: "Toile", image: "/bonjour.JPEG"},
-  { title: "My cabot", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/mycabot.JPEG"},
-  { title: "Charlie", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre ", dimension: " 40/40", support: "Carton", image: "/charlie.JPEG"},
-  { title: "James", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile", dimension: " 36/36", support: "Carton", image: "/james.JPEG"},
-  { title: "Alienation", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/alienation.JPEG"},
-  { title: "Rantanplan", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/rantanplan.JPEG"},
-  { title: "Erase", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/erase.JPEG"},
-  { title: "Color", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre acrylique et à l'huile ", dimension: " 36/36", support: "Carton", image: "/color.JPEG"},
-  { title: "My cat", technique: "Techniques mixtes: Stick à l'huile, acrylique, feutre, collage et bombe aérosol ", dimension: " 80/100 ", support: "Bois", image: "/mycat.JPEG"},
-  { title: "Look", technique: "Techniques mixtes: pastel grasse et bombe aérosol ", dimension: " 40/50 ", support: "Toile", image: "/lookv1.JPG"},
-  { title: "Le chaos", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Carton", image: "/lechaos.JPEG"},
-  { title: "My rabbit", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/myrabbit.JPEG"},
-  { title: "JMR or not", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 31/31 ", support: "Bois", image: "/JMBornot.JPEG"},
-  { title: "Visage à vif", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 58/122 ", support: "Bois", image: "/visageavif.JPEG"},
-  { title: "Sous pression", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 39/87 ", support: "Bois", image: "/souspression.JPEG"},
 
-  { title: "Scared", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 24/30 ", support: "Toile", image: "/sacred.JPEG"},
-  { title: "Matière", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 46/55 ", support: "Toile", image: "/matieres.JPEG"},
-  { title: "Dualité", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 25/25 ", support: "Toile", image: "/dualite.JPEG"},
-  { title: "Masque intérieur", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 80/80 ", support: "Toile", image: "/masqueinterieur.JPEG"},
-  { title: "Ne me regarde pas comme ça", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage ", dimension: " 60/80 ", support: "Toile", image: "/nemeregardepascommeca.JPEG"},
-  { title: "Le poid du dedans", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et collage", dimension: " 81/100 ", support: "Toile", image: "/lepoiddudedans.JPEG"},
-  { title: "Wired", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 100/100 ", support: "Toile", image: "/wired.JPEG"},
-  { title: "Héritage nerveux", technique: "Techniques mixtes: stick à l'huile, pastel gras, acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/heritagenerveux.JPEG"},
-  { title: "L'autre moi", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage", dimension: " 116/81 ", support: "Toile", image: "/lautremoi.JPEG"}
+
+ { title: "New VI", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVI.JPG" },
+   { title: "New VII", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newVII.JPG" },
+   { title: "Fashion", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 80/60", support: "Toile", image: "/fashion.JPEG" },
+   { title: "Flower", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 91/52", support: "Toile", image: "/flower.JPG" },
+   { title: "Liberation", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 120/80", support: "Toile", image: "/liberation.JPEG" },
+   { title: "New I", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 36/36", support: "Toile", image: "/newI.JPEG" },
+   { title: "New VIII", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newVIII.JPEG" },
+   { title: "New IX", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newIX.JPEG" },
+   { title: "New X", technique: "Carton entoilé avec encadrement, techniques mixtes : stick à l'huile, acrylique, feutre à l'huile", dimension: " 25/25", support: "Toile", image: "/newX.JPEG" },
+
+   { title: "Salut ça va!", technique: "Techniques mixtes – pastel grasse, huile, acrylique, collage, feutre et bombe aérosol", dimension: " 80/80 ", support: "Toile", image: "/salutcava.JPEG" },
+    { title: "We can do it", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 100/100 ", support: "Toile", image: "/wecandoit.JPEG" },
+    { title: "Why", technique: "mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/why.jpeg" },
+    { title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/my_monster.jpg" },
+    { title: "New II", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newII.JPG" },
+    { title: "New IV", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newIV.JPG" },
+
+   { title: "L'oeil V", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Toile", image: "/loeilV.JPG" },
+    { title: "L'oeil VI", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/100 ", support: "Toile", image: "/loeilVI.JPEG" },
+    { title: "L'oeil X", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 115/75 ", support: "Toile", image: "/loeilX.JPEG" },
+    { title: "Look", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique,collage", dimension: " 80/60 ", support: "Toile", image: "/look.jpeg" },
+    { title: "Return", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 60/40 ", support: "Toile", image: "/return.jpg" },
+
+ { title: "La flamme", technique: "Techniques mixtes: stick à l’huile,pastel grasse, acrylique, feutre.", dimension: " 73/36 ", support: "Bois", image: "/laflamme.JPG" },
+  { title: "Le trait", technique: "Feutre à l’huile", dimension: " 21/30 ", support: "Bois", image: "/letrait.JPEG" },
+  { title: "Terre", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 50/40 ", support: "Bois", image: "/terre.jpg" },
+  { title: "Indi", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique,feutre, bombe aérosol, collage", dimension: " 81/60 ", support: "Toile", image: "/indi.JPG" },
+  { title: "Julienne II", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 60/60 ", support: "Toile", image: "/julienneII.JPG" },
+  { title: "Julienne III", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage.", dimension: " 80/60 ", support: "Toile", image: "/julienneIII.JPG" },
+
+ { title: "Julienne I", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage.", dimension: " 111/70 ", support: "Bois", image: "/JulienneI.jpg" },
+   { title: "L'oeil III", technique: "Techniques mixtes", dimension: " 60/44 ", support: "Bois", image: "/LoeilIII.JPG" },
+   { title: "L'oeil IV", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Bois", image: "/LoeilIV.JPG" },
+   { title: "L'oeil IX", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 43/44 ", support: "Bois", image: "/LoeilIX.JPG" },
+   { title: "L'oeil VII", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 43/43 ", support: "Bois", image: "/LoeilVII.JPG" },
+   { title: "L'oeil VIII", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Bois", image: "/LoeilVIII.JPEG" },
+
+  { title: "Fragile", technique: "Techniques mixtes: stick à l’huile, pastel grasse, feutre, collage ", dimension: " 21/24 ", support: "Bois", image: "/fragile.JPEG" },
+   { title: "Horns", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 39/73 ", support: "Bois", image: "/horns.JPG" },
+   { title: "Diane", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Bois", image: "/diane.JPG" },
+{ title: "El croco", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre", dimension: " 206/30 ", support: "Bois", image: "/el_croco.jpg" },
+{ title: "Blue", technique: "Techniques mixtes: stick à l’huile, pastel grasse, aquarelle, feutre", dimension: " 43/43 ", support: "Bois", image: "/blue.jpeg" },
+
+ { title: "BB", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/BB.JPEG" }
 
 
 
@@ -123,6 +139,7 @@ const filteredOeuvres = computed(() => {
   return props.selectedSupport
     ? oeuvres.filter(oeuvre => oeuvre.support === props.selectedSupport)
     : oeuvres;
+
 });
 
 const openFullScreen = (imageSrc) => {

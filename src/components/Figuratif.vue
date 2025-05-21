@@ -36,24 +36,27 @@ const props = defineProps(["selectedSupport"]);
 const fullScreenImage = ref(null);
 
 const oeuvres = [
-    { title: "Vintage Music", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/vintagemusic.JPG" },
-    { title: "Rayures", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/rayures.JPG" },
-    { title: "Mental Load", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/mentalload.jpeg" },
-    { title: "Velophone", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/velophone.jpeg" },
-    { title: "Newstyle", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/newstyle.JPEG" },
-    { title: "Dessous sexy", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/dessoussexy.jpeg" },
-    { title: "Chignon", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels grasse, feutre", dimension: " 70/50 ", support: "Bois", image: "/chignon.JPG" },
-    { title: "Marcheuse", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 120/60 ", support: "Bois", image: "/marcheuse.JPG" },
-    { title: "Ragging", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/ragging.JPG" },
-    { title: "Mirroir", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile", dimension: " 120/60 ", support: "Bois", image: "/mirroir.jpeg" },
-    { title: "Woman tatoo", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile", dimension: " 36/78 ", support: "Bois", image: "/womantatoo.JPEG" },
-    { title: "You", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 100/70 ", support: "Bois", image: "/you2.JPEG" },
-    { title: "No name", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, feutre, brou de noix", dimension: " 100/80 ", support: "Bois", image: "/noname.JPEG" },
-    { title: "So good", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 120/80 ", support: "Bois", image: "/sogood.JPEG" },
-    { title: "You are", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, blanc de meudon", dimension: " 80/100 ", support: "Bois", image: "/youare.JPEG" },
-    { title: "Debout", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, blanc de meudon", dimension: " 132/41 ", support: "Bois", image: "/debout.JPEG" },
-    { title: "The ring", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, blanc de meudon", dimension: " 99/53 ", support: "Bois", image: "/thering.JPEG" },
-    { title: "Look", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, feutre, collage", dimension: " 80/60 ", support: "Bois", image: "/look2.jpeg" },
+
+{ title: "Miroir", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/miroir2.JPEG" },
+    { title: "Cindy", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/cindy.JPEG" },
+    { title: "It's not over", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/itsnotover.JPEG" },
+    { title: "Be on the move", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/beonthemove.JPEG" },
+    { title: "Hifi", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/hifi.jpeg" },
+{ title: "Bjork bis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/bjorkbis.JPEG" },
+    { title: "Erotic 2", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/erotic2.JPEG" },
+    { title: "Nude", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/nude2.JPEG" },
+    { title: "Don't look at me", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/dontlookatme.JPEG" },
+    { title: "Montley", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/montley.jpg" },
+        { title: "Backless", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/backless.jpg" },
+        { title: "Ballerine", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/ballerine.JPEG" },
+        { title: "Couple", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 115/80 ", support: "Bois", image: "/couple2.JPEG" },
+        { title: "Ramone", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ramone.JPEG" },
+        { title: "Claudia S.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 75/75 ", support: "Bois", image: "/claudias.jpeg" },
+
+        { title: "Trait de lumière", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 63/122 ", support: "Bois", image: "/traitdelumiere.JPEG" },
+
+
+
 
     { title: "Debby H.", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, feutre", dimension: " 61/25 ", support: "Acier", image: "/debby.jpeg" },
     { title: "Plage", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, feutre", dimension: " 61/25 ", support: "Acier", image: "/plage.JPG" },
@@ -84,7 +87,7 @@ const oeuvres = [
     { title: "I like trash", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, pastels à l'huile, aquarelle et feutre", dimension: " 120/80 ", support: "Carton", image: "/iliketrash.jpeg" },
     { title: "Back and clop", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, pastels à l'huile, collage, acrylique", dimension: " 80/60 ", support: "Carton", image: "/backandclop.jpg" },
     { title: "La fenêtre", technique: "bombe aérosol, pastels à l'huile, acrylique", dimension: " 46/105 ", support: "Carton", image: "/lafenetre.jpg" },
-    { title: "Le pied", technique: "bombe aérosol, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/lepied.jpg" },
+
     { title: "Nu", technique: "bombe aérosol, pastels à l'huile, collage", dimension: " 150/40 ", support: "Carton", image: "/nu.jpg" },
     { title: "Patricia Arquette", technique: "bombe aérosol, pastels à l'huile, collage", dimension: " 110/74 ", support: "Carton", image: "/patriciaarquette.jpg" },
     { title: "Peter Tosh", technique: "bombe aérosol, pastels à l'huile", dimension: " 85/60 ", support: "Carton", image: "/petertosh.jpg" },
@@ -146,26 +149,29 @@ const oeuvres = [
     { title: "Radiator", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/120 ", support: "Bois", image: "/radiator.jpg" },
     { title: "Bigoudis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/bigoudis.jpg" },
 
-    { title: "Montley", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/montley.jpg" },
-    { title: "Backless", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/backless.jpg" },
-    { title: "Ballerine", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/ballerine.JPEG" },
-    { title: "Couple", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 115/80 ", support: "Bois", image: "/couple2.JPEG" },
-    { title: "Ramone", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ramone.JPEG" },
-    { title: "Claudia S.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 75/75 ", support: "Bois", image: "/claudias.jpeg" },
 
-    { title: "Nina H.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ninah.JPEG" },
-    { title: "Sean P.", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/seanP.JPEG" },
-    { title: "Trait de lumière", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 63/122 ", support: "Bois", image: "/traitdelumiere.JPEG" },
-    { title: "Bjork bis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/bjorkbis.JPEG" },
-    { title: "Erotic 2", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/erotic2.JPEG" },
-    { title: "Nude", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/nude2.JPEG" },
-    { title: "Don't look at me", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/dontlookatme.JPEG" },
-    { title: "Miroir", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/miroir2.JPEG" },
-    { title: "Cindy", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/cindy.JPEG" },
-    { title: "It's not over", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/itsnotover.JPEG" },
-    { title: "Be on the move", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/beonthemove.JPEG" },
-    { title: "Hifi", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/hifi.jpeg" },
 
+
+    { title: "Newstyle", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/newstyle.JPEG" },
+    { title: "Dessous sexy", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/dessoussexy.jpeg" },
+    { title: "Chignon", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels grasse, feutre", dimension: " 70/50 ", support: "Bois", image: "/chignon.JPG" },
+    { title: "Marcheuse", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 120/60 ", support: "Bois", image: "/marcheuse.JPG" },
+    { title: "Ragging", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/ragging.JPG" },
+
+{ title: "Vintage Music", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/vintagemusic.JPG" },
+    { title: "Rayures", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/rayures.JPG" },
+    { title: "Mental Load", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/mentalload.jpeg" },
+    { title: "Velophone", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 70/50 ", support: "Bois", image: "/velophone.jpeg" },
+
+{ title: "Mirroir", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile", dimension: " 120/60 ", support: "Bois", image: "/mirroir.jpeg" },
+    { title: "Woman tatoo", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile", dimension: " 36/78 ", support: "Bois", image: "/womantatoo.JPEG" },
+    { title: "You", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 100/70 ", support: "Bois", image: "/you2.JPEG" },
+    { title: "No name", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, feutre, brou de noix", dimension: " 100/80 ", support: "Bois", image: "/noname.JPEG" },
+    { title: "So good", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 120/80 ", support: "Bois", image: "/sogood.JPEG" },
+    { title: "You are", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, blanc de meudon", dimension: " 80/100 ", support: "Bois", image: "/youare.JPEG" },
+    { title: "Debout", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, blanc de meudon", dimension: " 132/41 ", support: "Bois", image: "/debout.JPEG" },
+    { title: "The ring", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage, blanc de meudon", dimension: " 99/53 ", support: "Bois", image: "/thering.JPEG" },
+    { title: "Look", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, feutre, collage", dimension: " 80/60 ", support: "Bois", image: "/look2.jpeg" }
 
 
 ];
@@ -174,6 +180,7 @@ const filteredOeuvres = computed(() => {
   return props.selectedSupport
     ? oeuvres.filter(oeuvre => oeuvre.support === props.selectedSupport)
     : oeuvres;
+
 });
 const openFullScreen = (imageSrc) => {
   fullScreenImage.value = imageSrc;
