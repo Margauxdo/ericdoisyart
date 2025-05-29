@@ -44,7 +44,7 @@ const oeuvres = [
     { title: "Hifi", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/hifi.jpeg" },
     { title: "Bjork bis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/bjorkbis.JPEG" },
     { title: "Erotic 2", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/erotic2.JPEG" },
-    { title: "Nude", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/nude2.JPEG" },
+
     { title: "Don't look at me", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/dontlookatme.JPEG" },
     { title: "Montley", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/montley.jpg" },
     { title: "Backless", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/backless.jpg" },
@@ -119,7 +119,7 @@ const oeuvres = [
     { title: "Ganja", technique: "bombe aérosol , pastels à l'huile, collage", dimension: " 120/80 ", support: "Toile", image: "/ganja.jpg" },
     { title: "Kate Moss", technique: "bombe aérosol , pastels à l'huile, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/kateMoss.jpg" },
     { title: "Lucie", technique: "bombe aérosol , pastels à l'huile, collage", dimension: " 81/116 ", support: "Toile", image: "/lucie.jpg" },
-    { title: "Roller", technique: "bombe aérosol , pastels à l'huile, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/roller.jpg" },
+
     { title: "Surprise", technique: "bombe aérosol , pastels à l'huile, collage", dimension: " 115/75 ", support: "Toile", image: "/surprise.jpg" },
     { title: "Tatoo", technique: "bombe aérosol , pastels à l'huile, collage", dimension: " 116/81 ", support: "Toile", image: "/tatoo.jpg" },
     { title: "Steeve and ...", technique: "bombe aérosol , pochoir, acrylique, feutre, pastels grasses, collage", dimension: " 160/60 ", support: "Toile", image: "/steeveand.JPEG" },

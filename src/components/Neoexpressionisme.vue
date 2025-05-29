@@ -36,6 +36,8 @@ const fullScreenImage = ref(null);
 
 const oeuvres = [
 
+{ title: "Le coeur dans l'oeil ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre ", dimension: " 81/116 ", support: "Toile", image: "/lecoeurdansloeil.JPEG"},
+{ title: "Le costume du chaos ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre ", dimension: " 80/80 ", support: "Toile", image: "/lecostumeduchaos.JPEG"},
 { title: "Ca rit,ça hurle! ", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre ", dimension: " 80/80 ", support: "Toile", image: "/caritcahurle.JPEG"},
 { title: "Tension positive", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/tensionpositive.JPEG"},
 { title: "Frisson violet", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre et collage", dimension: " 60/80 ", support: "Bois", image: "/frissonviolet.JPEG"},
