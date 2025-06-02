@@ -44,7 +44,6 @@ const oeuvres = [
     { title: "Hifi", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/hifi.jpeg" },
     { title: "Bjork bis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/bjorkbis.JPEG" },
     { title: "Erotic 2", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/erotic2.JPEG" },
-
     { title: "Don't look at me", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/dontlookatme.JPEG" },
     { title: "Montley", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/montley.jpg" },
     { title: "Backless", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/backless.jpg" },
@@ -131,7 +130,6 @@ const oeuvres = [
     { title: "Shut up", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/shutup.jpg" },
     { title: "Broken", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/80 ", support: "Bois", image: "/broken.jpg" },
     { title: "Sensual II", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 61/89 ", support: "Bois", image: "/sensualII.jpg" },
-    { title: "I see you", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/115 ", support: "Bois", image: "/Iseeyou.jpg" },
     { title: "Radiator", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/120 ", support: "Bois", image: "/radiator.jpg" },
     { title: "Bigoudis", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/bigoudis.jpg" },
     { title: "Newstyle", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/newstyle.JPEG" },
