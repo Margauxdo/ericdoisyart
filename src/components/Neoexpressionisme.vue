@@ -35,7 +35,9 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
-{ title: "Connexion perdue ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage ", dimension: " 81/116 ", support: "Bois", image: "/connexionperdue.JPEG"},
+{ title: "Je ris donc je fuis ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et bombe aérosol ", dimension: " 60/80 ", support: "Bois", image: "/jerisdoncjefuis.JPEG"},
+{ title: "La tribu du silence ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage ", dimension: " 80/115 ", support: "Bois", image: "/latribudusilence.jpeg"},
+{ title: "Connexion perdue ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage ", dimension: " 60/80 ", support: "Bois", image: "/connexionperdue.JPEG"},
 { title: "Le coeur dans l'oeil ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre ", dimension: " 81/116 ", support: "Toile", image: "/lecoeurdansloeil.JPEG"},
 { title: "Le costume du chaos ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre ", dimension: " 80/80 ", support: "Toile", image: "/lecostumeduchaos.JPEG"},
 { title: "Ca rit,ça hurle! ", technique: "Techniques mixtes: stick à l'huile, pastels grasses,acrylique, feutre ", dimension: " 80/80 ", support: "Toile", image: "/caritcahurle.JPEG"},
