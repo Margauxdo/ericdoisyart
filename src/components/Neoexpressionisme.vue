@@ -35,6 +35,11 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " L'echo de l'autre ", technique: "Techniques mixtes: stick à l'huile, acrylique ", dimension: " 60/60 ", support: "Toile", image: "/lechodelautre.JPEG"},
+{ title: " Gratter l'humain ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutres", dimension: " 69/110 ", support: "Acier", image: "/gratterlhumain.JPEG"},
+{ title: " My monster ", technique: "Techniques du feutres ", dimension: " 15/74 ", support: "Bois", image: "/mymonsterbois.png"},
+{ title: " Regarde moi avec le coeur ", technique: "Techniques mixtes: stick à l'huile, acrylique, collage et feutres ", dimension: " 63/121 ", support: "Bois", image: "/regardemoiaveclecoeur.JPEG"},
+{ title: " Fragile brut ", technique: "Techniques mixtes: stick à l'huile, acrylique, collage ", dimension: " 61/89 ", support: "Bois", image: "/fragilebrut.JPEG"},
 { title: "Je ris donc je fuis ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et bombe aérosol ", dimension: " 60/80 ", support: "Bois", image: "/jerisdoncjefuis.JPEG"},
 { title: "La tribu du silence ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage ", dimension: " 80/115 ", support: "Bois", image: "/latribudusilence.jpeg"},
 { title: "Connexion perdue ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutre et collage ", dimension: " 60/80 ", support: "Bois", image: "/connexionperdue.JPEG"},
@@ -91,7 +96,7 @@ const oeuvres = [
 { title: "Salut ça va!", technique: "Techniques mixtes – pastel grasse, huile, acrylique, collage, feutre et bombe aérosol", dimension: " 80/80 ", support: "Toile", image: "/salutcava.JPEG" },
 { title: "We can do it", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre, bombe aérosol, collage", dimension: " 100/100 ", support: "Toile", image: "/wecandoit.JPEG" },
 { title: "Why", technique: "mixtes: bombe aérosol avec techniques du pochoir, pastels à l’huile, acrylique, collage", dimension: " 80/60 ", support: "Toile", image: "/why.jpeg" },
-{ title: "My monster", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/my_monster.jpg" },
+{ title: "Crâne rieur", technique: "Acrylique, pastels à l'huile", dimension: " 75/45 ", support: "Acier", image: "/my_monster.jpg" },
 { title: "New II", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newII.JPG" },
 { title: "New IV", technique: "techniques mixtes: stick à l'huile, feutre à l'huile, acrylique", dimension: " 36/36", support: "Toile", image: "/newIV.JPG" },
 { title: "L'oeil V", technique: "Techniques mixtes: pastels à l’huile, acrylique, collage, huile", dimension: " 80/60 ", support: "Toile", image: "/loeilV.JPG" },
