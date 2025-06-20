@@ -7,6 +7,14 @@
       <div v-for="(oeuvre, index) in filteredOeuvres" :key="index" class="artwork-container">
       <a href="#" @click.prevent="openImage(oeuvre.image)">
         <img :src="oeuvre.image" :alt="oeuvre.title" class="artwork-image" />
+
+
+
+         <!-- Filtre gris si vendu -->
+                    <div v-if="oeuvre.vendu" class="image-overlay"></div>
+                    <!-- Frise VENDU -->
+                    <div v-if="oeuvre.vendu" class="vendu-badge">VENDU</div>
+
         </a>
         <div class="overlay">
           <h3 class="title">{{ oeuvre.title }}</h3>
@@ -35,6 +43,8 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " Trop plein ", technique: "Techniques mixtes: acrylique, stick à l'huile et feutre ", dimension: " 30/120 ", support: "Bois", image: "/tropplein.JPEG"},
+{ title: " Cloué dans le bois ", technique: "Techniques mixtes: bombe aérosol, stick à l'huile et pastel grasse ", dimension: " 77/12 ", support: "Bois", image: "/clouédanslebois.JPEG"},
 { title: " L'echo de l'autre ", technique: "Techniques mixtes: stick à l'huile, acrylique ", dimension: " 60/60 ", support: "Toile", image: "/lechodelautre.JPEG"},
 { title: " Gratter l'humain ", technique: "Techniques mixtes: stick à l'huile, acrylique, feutres", dimension: " 69/110 ", support: "Acier", image: "/gratterlhumain.JPEG"},
 { title: " My monster ", technique: "Techniques du feutres ", dimension: " 15/74 ", support: "Bois", image: "/mymonsterbois.png"},
@@ -121,8 +131,11 @@ const oeuvres = [
 { title: "Diane", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 80/60 ", support: "Bois", image: "/diane.JPG" },
 { title: "El croco", technique: "Techniques mixtes: stick à l’huile, pastel grasse, acrylique, feutre", dimension: " 206/30 ", support: "Bois", image: "/el_croco.jpg" },
 { title: "Blue", technique: "Techniques mixtes: stick à l’huile, pastel grasse, aquarelle, feutre", dimension: " 43/43 ", support: "Bois", image: "/blue.jpeg" },
-{ title: "BB", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/BB.JPEG" }
+{ title: "BB", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, pastels à l'huile, collage", dimension: " 80/60 ", support: "Bois", image: "/BB.JPEG" },
 
+
+
+{ title: "New V", technique: "Techniques mixtes: stick à l'huile et feutre", dimension: " 36/36 ", support: "Toile", image: "/newV.jpg", vendu:true }
 
 
 
@@ -145,6 +158,37 @@ const closeFullScreen = () => {
 </script>
 
 <style scoped>
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(80, 80, 80, 0.5); /* gris semi-transparent */
+  z-index: 2;
+}
+.vendu-badge {
+  position: absolute;
+  top: 10px;
+  left: -40px;
+  transform: rotate(-45deg);
+  background-color: #017393;
+  color: white;
+  font-weight: bold;
+  padding: 5px 60px;
+  font-size: 14px;
+  z-index: 3;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+
+
 .gallery {
   max-width: 1500px;
   width: 100%;
