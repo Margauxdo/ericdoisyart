@@ -43,6 +43,7 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " Fissures ", technique: "Techniques mixtes: stick à l'huile et feutre ", dimension: " 80/125 ", support: "Bois", image: "/fissures.JPEG"},
 { title: " Trop plein ", technique: "Techniques mixtes: acrylique, stick à l'huile et feutre ", dimension: " 30/120 ", support: "Bois", image: "/tropplein.JPEG"},
 { title: " Cloué dans le bois ", technique: "Techniques mixtes: bombe aérosol, stick à l'huile et pastel grasse ", dimension: " 77/12 ", support: "Bois", image: "/clouédanslebois.JPEG"},
 { title: " L'echo de l'autre ", technique: "Techniques mixtes: stick à l'huile, acrylique ", dimension: " 60/60 ", support: "Toile", image: "/lechodelautre.JPEG"},

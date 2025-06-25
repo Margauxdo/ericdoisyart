@@ -65,7 +65,6 @@ const oeuvres = [
     { title: "John Lydon", technique: "collage, pastels à l'huile, bombe aérosol et acrylique", dimension: " 65/105 ", support: "Toile de jute", image: "/johnlydon.jpg" },
     { title: "Pop", technique: "collage, pastels à l'huile, bombe aérosol ", dimension: " 65/105 ", support: "Toile de jute", image: "/pop .jpg" },
     { title: "Body", technique: "Techniques mixtes : bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique ", dimension: " 110/47 ", support: "Bois de palette", image: "/body.JPEG" },
-    { title: "Cuba", technique: "bombe aérosol, pastels à l'huile, acrylique, collage ", dimension: " 80/120 ", support: "Bois de palette", image: "/cuba.jpg" },
     { title: "Debby", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage ", dimension: " 120/74 ", support: "Bois de palette", image: "/debby.JPG" },
     { title: "La nuque", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique", dimension: " 120/74 ", support: "Bois de palette", image: "/lanuque.JPEG" },
     { title: "Le train", technique: "Techniques mixtes:  pastels à l'huile, acrylique, collage, bombe aérosol", dimension: " 80/60 ", support: "Carton", image: "/letrain.JPEG" },
@@ -151,12 +150,12 @@ const oeuvres = [
     { title: "Look", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, acrylique, feutre, collage", dimension: " 80/60 ", support: "Bois", image: "/look2.jpeg" },
 
 
-
-      { title: "Sex Pistols", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique, feutre", dimension: " 80/60 ", support: "Carton", image: "/sexpistols.jpg", vendu:true },
-    { title: "Non", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, acrylique, collage/déchirage/grattage", dimension: " 53/58 ", support: "Bois de palette", image: "/non.jpeg", vendu:true },
-      { title: "Vinyle", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, peinture à la craie, feutre", dimension: " 120/77 ", support: "Bois de palette", image: "/vinyle.JPEG" , vendu : true },
-    { title: "Le piano", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, blanc de meudon", dimension: " 116/81 ", support: "Toile", image: "/lepiano.JPEG" , vendu : true},
-    { title: "Steeve and ...", technique: "bombe aérosol , pochoir, acrylique, feutre, pastels grasses, collage", dimension: " 160/60 ", support: "Toile", image: "/steeveand.JPEG", vendu:true },
+     { title: "Cuba", technique: "bombe aérosol, pastels à l'huile, acrylique, collage ", dimension: " 80/120 ", support: "Bois de palette", image: "/cuba.jpg", vendu:true },
+     { title: "Sex Pistols", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique, feutre", dimension: " 80/60 ", support: "Carton", image: "/sexpistols.jpg", vendu:true },
+     { title: "Non", technique: "Techniques mixtes: spray avec techniques du pochoir, pastels à l'huile, acrylique, collage/déchirage/grattage", dimension: " 53/58 ", support: "Bois de palette", image: "/non.jpeg", vendu:true },
+     { title: "Vinyle", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, peinture à la craie, feutre", dimension: " 120/77 ", support: "Bois de palette", image: "/vinyle.JPEG" , vendu : true },
+     { title: "Le piano", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, blanc de meudon", dimension: " 116/81 ", support: "Toile", image: "/lepiano.JPEG" , vendu : true},
+     { title: "Steeve and ...", technique: "bombe aérosol , pochoir, acrylique, feutre, pastels grasses, collage", dimension: " 160/60 ", support: "Toile", image: "/steeveand.JPEG", vendu:true },
 
 ];
 
