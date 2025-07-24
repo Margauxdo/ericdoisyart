@@ -43,6 +43,12 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " Même moule, âmes opposés ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 60/80", support: "Bois", image: "/mememouleamesopposes.JPEG"},
+{ title: " Perdu dans le jaune ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 53/99 ", support: "Bois", image: "/perdudanslejaune.JPEG"},
+{ title: " L'oeil et la cible' ", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et bombe aérosol ", dimension: " 120/73 ", support: "Bois", image: "/loeiletlacible.JPG"},
+{ title: " Sous les masques ", technique: "Techniques mixtes: stick à l'huile et feutres ", dimension: " 60/80 ", support: "Bois", image: "/souslesmasques.JPEG"},
+{ title: " Le masque et la bête ", technique: "Techniques mixtes: stick à l'huile, collage et acrylique ", dimension: " 86/54 ", support: "Bois", image: "/lemasqueetlabete.JPEG"},
+
 { title: " Les deux moi ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 14/132 ", support: "Bois", image: "/lesdeuxmoi.JPEG"},
 { title: " Fissures ", technique: "Techniques mixtes: stick à l'huile et feutre ", dimension: " 80/125 ", support: "Bois", image: "/fissures.JPEG"},
 { title: " Trop plein ", technique: "Techniques mixtes: acrylique, stick à l'huile et feutre ", dimension: " 30/120 ", support: "Bois", image: "/tropplein.JPEG"},
