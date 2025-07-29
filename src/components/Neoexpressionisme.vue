@@ -43,6 +43,7 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " Résistance primitive", technique: "Techniques mixtes: stick à l'huile, feutre à l'huile, acrylique, collage et spray ", dimension: " 100/80", support: "Toile", image: "/resistanceprimitive.JPEG"},
 { title: " Même moule, âmes opposés ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 60/80", support: "Bois", image: "/mememouleamesopposes.JPEG"},
 { title: " Perdu dans le jaune ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 53/99 ", support: "Bois", image: "/perdudanslejaune.JPEG"},
 { title: " L'oeil et la cible' ", technique: "Techniques mixtes: stick à l'huile, feutre, acrylique et bombe aérosol ", dimension: " 120/73 ", support: "Bois", image: "/loeiletlacible.JPG"},

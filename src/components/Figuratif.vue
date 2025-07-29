@@ -93,7 +93,6 @@ const oeuvres = [
     { title: "Suggerer", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 60/40 ", support: "Toile", image: "/suggerer.JPEG" },
     { title: "Nude", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/81 ", support: "Toile", image: "/nude.JPEG" },
     { title: "Blondie", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/81 ", support: "Toile", image: "/blondie.JPEG" },
-    { title: "Already seen", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/80 ", support: "Toile", image: "/alreadyseen.JPEG" },
     { title: "L'oiseau", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, peinture à la craie, feutre", dimension: " 100/81 ", support: "Toile", image: "/loiseau.jpeg" },
     { title: "Bonnet", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, blanc de meudon", dimension: " 100/80 ", support: "Toile", image: "/bonnet.JPEG" },
     { title: "You", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage, blanc de meudon", dimension: " 80/60 ", support: "Toile", image: "/you.JPEG" },
@@ -111,7 +110,6 @@ const oeuvres = [
     { title: "Bandana", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels grasse, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/bandana.jpeg" },
     { title: "The rose", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile", dimension: " 116/81 ", support: "Toile", image: "/therose.jpg" },
     { title: "Belle", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 120/80 ", support: "Toile", image: "/belle.jpg" },
-    { title: "Drag-queen", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/dragqueen.jpg" },
     { title: "Fatale", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 80/120 ", support: "Toile", image: "/fatale.jpg" },
     { title: "Ganja", technique: "bombe aérosol , pastels à l'huile, collage", dimension: " 120/80 ", support: "Toile", image: "/ganja.jpg" },
     { title: "Kate Moss", technique: "bombe aérosol , pastels à l'huile, collage/déchirage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/kateMoss.jpg" },
@@ -145,6 +143,9 @@ const oeuvres = [
 
 
 
+
+      { title: "Drag-queen", technique: "bombe aérosol , pastels à l'huile, collage, acrylique", dimension: " 116/81 ", support: "Toile", image: "/dragqueen.jpg" , vendu: true},
+      { title: "Already seen", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage", dimension: " 100/80 ", support: "Toile", image: "/alreadyseen.JPEG" , vendu:true},
       { title: "Shut up", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 120/60 ", support: "Bois", image: "/shutup.jpg", vendu:true },
       { title: "Debby", technique: "Techniques mixtes: bombe aérosol avec techniques du pochoir, pastels à l'huile, acrylique, collage ", dimension: " 120/74 ", support: "Bois de palette", image: "/debby.JPG" , vendu:true},
       { title: "Ramone", technique: "techniques mixtes: collage, pastels grasses, bombe aérosol, pochoir, feutre, acrylique", dimension: " 80/60 ", support: "Bois", image: "/ramone.JPEG" , vendu:true},
