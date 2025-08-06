@@ -74,7 +74,7 @@ const oeuvres = [
     { title: "Kurt and ...", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, blanc de meudon, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/kurtand.JPEG" },
     { title: "Base ball", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique", dimension: " 60/60 ", support: "Carton", image: "/baseball.JPEG" },
     { title: "Bjork", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/bjork.JPEG" },
-    { title: "Angus", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/angus.JPEG" },
+    { title: "Angus", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/angus.JPEG", vendu:true },
     { title: "Dentelle", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, collage, pastels à l'huile, acrylique", dimension: " 80/60 ", support: "Carton", image: "/dentelle.jpg" },
     { title: "Body Painting", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, pastels à l'huile", dimension: " 80/60 ", support: "Carton", image: "/bodypainting.jpg" },
     { title: "I like trash", technique: "Techniques mixtes:   bombe aérosol avec techniques du pochoir, pastels à l'huile, aquarelle et feutre", dimension: " 120/80 ", support: "Carton", image: "/iliketrash.jpeg" },

@@ -43,6 +43,9 @@ const fullScreenImage = ref(null);
 
 
 const oeuvres = [
+{ title: " Compression", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 40/50", support: "Bois", image: "/compression.JPEG"},
+{ title: " Coeur blindé ", technique: "Techniques mixtes: stick à l'huile, feutre, collage et acrylique ", dimension: " 116/81", support: "Toile", image: "/coeurblinde.JPEG"},
+
 { title: " Résistance primitive", technique: "Techniques mixtes: stick à l'huile, feutre à l'huile, acrylique, collage et spray ", dimension: " 100/80", support: "Toile", image: "/resistanceprimitive.JPEG"},
 { title: " Même moule, âmes opposés ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 60/80", support: "Bois", image: "/mememouleamesopposes.JPEG"},
 { title: " Perdu dans le jaune ", technique: "Techniques mixtes: stick à l'huile, feutre et acrylique ", dimension: " 53/99 ", support: "Bois", image: "/perdudanslejaune.JPEG"},
